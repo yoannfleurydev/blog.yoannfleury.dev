@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "yoannfleurydev.github.io",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Blog build using Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Yoann Fleury <yoann.fleury@yahoo.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/yoannfleurydev/yoannfleurydev.github.io/issues"
   },
   "dependencies": {
     "gatsby": "^2.6.0",
@@ -39,15 +39,16 @@
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/yoannfleurydev/yoannfleurydev.github.io#readme",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "blog"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/yoannfleurydev/yoannfleurydev.github.io.git"
   },
   "scripts": {
     "build": "gatsby build",
