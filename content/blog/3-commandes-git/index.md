@@ -1,12 +1,10 @@
 ---
-title: A Propos
+title: Les 3 commandes Git que j'utilise le plus
 date: "2019-01-26T20:00:00.000Z"
 description: Dévouvrons ensemble les 3 commandes git que j'utilise le plus !
 ---
 
 ![Image du logo de Git](./git.png)
-
-# Les 3 commandes git que j'utilise le plus
 
 > Bon, c'est peut être l'article pas très utile pour ceux qui connaissent déjà
 > git mais voici les 3 commandes git que j'utilise le plus, hors add et commit
