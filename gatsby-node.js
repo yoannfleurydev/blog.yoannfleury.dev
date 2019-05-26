@@ -11,6 +11,7 @@ exports.createPages = ({ graphql, actions }) => {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
+          filter: { frontmatter: { published: { eq: true } } }
         ) {
           edges {
             node {
@@ -19,7 +20,6 @@ exports.createPages = ({ graphql, actions }) => {
               }
               frontmatter {
                 title
-                published
               }
             }
           }
@@ -38,17 +38,15 @@ exports.createPages = ({ graphql, actions }) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
 
-      if (post.node.frontmatter.published) {
-        createPage({
-          path: post.node.fields.slug,
-          component: blogPost,
-          context: {
-            slug: post.node.fields.slug,
-            previous,
-            next,
-          },
-        })
-      }
+      createPage({
+        path: post.node.fields.slug,
+        component: blogPost,
+        context: {
+          slug: post.node.fields.slug,
+          previous,
+          next,
+        },
+      })
     })
 
     return null
