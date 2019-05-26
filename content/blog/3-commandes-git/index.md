@@ -9,7 +9,7 @@ published: true
 
 > Bon, c'est peut être l'article pas très utile pour ceux qui connaissent déjà
 > git mais voici les 3 commandes git que j'utilise le plus, hors add et commit
-> qui sont assez communs.
+> qui sont assez communes.
 
 ## Commande numéro 1 : status
 
