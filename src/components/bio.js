@@ -38,12 +38,11 @@ function Bio() {
               }}
             />
             <p>
-              Blog personnel de <strong>{author}</strong>. Vous pouvez y trouver
-              des articles (fréquents ou pas) sur mes découvertes dans le monde
-              du développement.{` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Vous pouvez me suivre sur Twitter
-              </a>
+              Blog personnel de{" "}
+              <a href={`https://twitter.com/${social.twitter}`}>{author}</a>.
+              Vous pouvez y trouver des articles (fréquents ou pas) sur mes
+              découvertes dans le monde du développement.{` `}
+              Vous pouvez me suivre sur Twitter
             </p>
           </div>
         )
