@@ -35,6 +35,10 @@ a {
   }
 }
 
+hr {
+  background-color: var(--hr);
+}
+
 /*
   Based on copypasta from Remy Bach and Sarah Drasner
  */
