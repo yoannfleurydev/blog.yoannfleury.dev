@@ -1,6 +1,6 @@
 workflow "Build and Deploy Blog" {
-  resolves = ["Notify Me"]
   on = "push"
+  resolves = "Notification"
 }
 
 action "Install packages" {
@@ -26,9 +26,9 @@ action "Deploy Blog" {
   ]
 }
 
-action "Notify Me" {
-  uses = "swinton/httpie.action@8ab0a0e926d091e0444fcacd5eb679d2e2d4ab3d"
+action "Notification" {
   needs = ["Deploy Blog"]
-  secrets = ["USER", "PASS"]
-  args = "[\"GET\", \"https://smsapi.free-mobile.fr/sendmsg?user=$USER&pass=$PASS&msg=Blog%20deployed\"]"
+  uses = "Ilshidur/actions/discord@d138085a3c88a353c8930504c36daadd39008fac"
+  secrets = ["DISCORD_WEBHOOK"]
+  args = "The blog has been deployed."
 }
