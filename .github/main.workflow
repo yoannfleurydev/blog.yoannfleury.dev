@@ -21,7 +21,9 @@ action "Deploy Blog" {
     PUBLISH_DIR = "./public"
     PUBLISH_BRANCH = "master"
   }
-  secrets = ["GITHUB_PAGES_ACTIONS_DEPLOY_KEY"]
+  secrets = [
+    "ACTIONS_DEPLOY_KEY",
+  ]
 }
 
 action "Notify Me" {
