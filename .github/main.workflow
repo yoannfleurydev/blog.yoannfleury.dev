@@ -5,13 +5,13 @@ workflow "Build and Deploy Blog" {
 
 action "Install packages" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
-  runs = "install"
+  args = "install"
 }
 
 action "Build & Deploy Blog" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Install packages"]
-  runs = "run deploy"
+  args = "run deploy"
 }
 
 action "Notify Me" {
