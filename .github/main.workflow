@@ -1,6 +1,6 @@
 workflow "Build and Deploy Blog" {
   on = "push"
-  resolves = "Notification"
+  resolves = ["Deploy Blog"]
 }
 
 action "Install packages" {
@@ -24,11 +24,4 @@ action "Deploy Blog" {
   secrets = [
     "ACTIONS_DEPLOY_KEY",
   ]
-}
-
-action "Notification" {
-  needs = ["Deploy Blog"]
-  uses = "Ilshidur/actions/discord@d138085a3c88a353c8930504c36daadd39008fac"
-  secrets = ["DISCORD_WEBHOOK"]
-  args = "The blog has been deployed."
 }
