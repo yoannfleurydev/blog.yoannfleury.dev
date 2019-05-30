@@ -41,8 +41,8 @@ function Bio() {
               Blog personnel de{" "}
               <a
                 href={`https://twitter.com/${social.twitter}`}
-                rel="noopener noreferer"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {author}
               </a>
