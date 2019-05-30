@@ -39,8 +39,14 @@ function Bio() {
             />
             <p>
               Blog personnel de{" "}
-              <a href={`https://twitter.com/${social.twitter}`}>{author}</a>.
-              Vous pouvez y trouver des articles (fréquents ou pas) sur mes
+              <a
+                href={`https://twitter.com/${social.twitter}`}
+                rel="noopener noreferer"
+                target="_blank"
+              >
+                {author}
+              </a>
+              . Vous pouvez y trouver des articles (fréquents ou pas) sur mes
               découvertes dans le monde du développement.{` `}
             </p>
           </div>
