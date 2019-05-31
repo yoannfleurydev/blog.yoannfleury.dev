@@ -27,9 +27,9 @@ Pour la mise à disposition sur le web, je passe par les [Github Pages] sous
 forme de page personnelle, c'est à dire que le nom du dépôt Git correspond
 au nom de mon utilisateur `yoannfleurydev.github.io`. Les Github Pages
 permettent de mettre un site statique sur le web gratuitement, ce qui est utile
-pour un blog pour éviter les coup d'hébergement.
+pour un blog pour éviter les coups d'hébergement.
 
-Il existe un paquet [npm] qui permet de mettre rapidement des pages statique sur
+Il existe un paquet [npm] qui permet de mettre rapidement des pages statiques sur
 les Github Pages : [gh-pages]. J'ai donc ajouté ce paquet à mes dépendences et
 j'ai ajouté une ligne dans mon `package.json` pour faire le déploiement en une
 commande npm.
@@ -60,7 +60,7 @@ pointer le sous domaine `blog` pour être redirigé vers Github.
 ---
 
 Je le disais tout à l'heure, le starter que j'ai utilisé est minimal et il
-publie tout les articles qu'il trouve, peu importe leur état, brouillon ou pas.
+publie tous les articles qu'il trouve, peu importe leur état, brouillon ou pas.
 J'ai donc voulu ajouter moi-même ce système de brouillon, car je veux pouvoir rédiger
 plusieurs articles en même temps sans vouloir qu'ils soient tous publiés.
 
