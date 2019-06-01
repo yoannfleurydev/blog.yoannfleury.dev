@@ -28,17 +28,11 @@ class ImageZoom extends React.Component {
 }
 
 const Photos = ({ data, location }) => {
+  const [renderedImages, setRenderedImages] = React.useState(<div />)
   const images = data.allFile.edges
 
-  return (
-    <Layout location={location} title={data.site.siteMetadata.title}>
-      <SEO title="Media" />
-      <h1>Mes photos</h1>
-      <p>
-        Ces images sont en qualités réduites, vous pouvez les voir en haute
-        qualité en cliquant dessus. Elles peuvent mettre un certain délais en
-        fonction de votre connexion.
-      </p>
+  React.useEffect(() => {
+    setRenderedImages(
       <div
         style={{
           display: "flex",
@@ -59,6 +53,19 @@ const Photos = ({ data, location }) => {
           />
         ))}
       </div>
+    )
+  }, [])
+
+  return (
+    <Layout location={location} title={data.site.siteMetadata.title}>
+      <SEO title="Media" />
+      <h1>Mes photos</h1>
+      <p>
+        Ces images sont en qualités réduites, vous pouvez les voir en haute
+        qualité en cliquant dessus. Elles peuvent mettre un certain délais en
+        fonction de votre connexion.
+      </p>
+      {renderedImages}
     </Layout>
   )
 }
