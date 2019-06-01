@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Footer = () => {
   return (
@@ -24,7 +25,8 @@ const Footer = () => {
         title="Lien vers la page twitter de Yoann Fleury"
       >
         twitter
-      </a>
+      </a>{" "}
+      &bull; <Link to="/photos">photos</Link>
       <p>
         © {new Date().getFullYear()}, Mis à disposition grâce à{` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
