@@ -1,7 +1,7 @@
 ---
 title: Mise en place de ce blog
 date: "2019-05-27T20:00:00.000Z"
-description: Découvrons ensemble ce qui se cache derrière ce blog, et les améliorations que j'ai apporté au projet de base
+description: Découvrons ensemble ce qui se cache derrière ce blog, et les améliorations que j'ai apportées au projet de base
 published: true
 ---
 
@@ -18,7 +18,7 @@ En tout, de l'installation, en passant par la mise à jour des données les plus
 classiques (principalement les méta-données telle que l'auteur, la bio, le titre)
 à la mise en place sur les serveurs, il m'aura fallu une trentaine de minutes en
 comptant le temps d'attente pour la disponibilité sur les serveurs, ce qui est
-relativement correct car je ne connaissais pas l'outil et je me suis balladé
+relativement correct car je ne connaissais pas l'outil et je me suis baladé
 dans les fichiers pour mettre à jour les informations utiles.
 
 ---
@@ -30,7 +30,7 @@ permettent de mettre un site statique sur le web gratuitement, ce qui est utile
 pour un blog pour éviter les coups d'hébergement.
 
 Il existe un paquet [npm] qui permet de mettre rapidement des pages statiques sur
-les Github Pages : [gh-pages]. J'ai donc ajouté ce paquet à mes dépendences et
+les Github Pages : [gh-pages]. J'ai donc ajouté ce paquet à mes dépendances et
 j'ai ajouté une ligne dans mon `package.json` pour faire le déploiement en une
 commande npm.
 
