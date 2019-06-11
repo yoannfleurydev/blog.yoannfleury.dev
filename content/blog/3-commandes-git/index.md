@@ -1,7 +1,7 @@
 ---
 title: Les 3 commandes Git que j'utilise le plus
 date: "2019-01-26T20:00:00.000Z"
-description: Dévouvrons ensemble les 3 commandes git que j'utilise le plus !
+description: Découvrons ensemble les 3 commandes git que j'utilise le plus !
 published: true
 ---
 
@@ -15,7 +15,7 @@ published: true
 
 `git status` est probablement la commande git que j'utilise le plus. Elle permet
 de connaître rapidement l'état dans lequel est le dépôt. J'utilise un alias,
-pour gagner du temps et formatter la sortie de la commande comme je le souhaite.
+pour gagner du temps et formater la sortie de la commande comme je le souhaite.
 
 `git st` me permet de faire la même chose que `git status -sb`, c'est à dire,
 afficher un `status` mais en version courte grâce au `-s | --short` et avec la
