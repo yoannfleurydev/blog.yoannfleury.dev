@@ -58,12 +58,12 @@ const Photos = ({ data, location }) => {
 
   return (
     <Layout location={location} title={data.site.siteMetadata.title}>
-      <SEO title="Media" />
+      <SEO title="Photos" />
       <h1>Mes photos</h1>
       <p>
         Ces images sont en qualités réduites, vous pouvez les voir en haute
-        qualité en cliquant dessus. Elles peuvent mettre un certain délais en
-        fonction de votre connexion.
+        qualité en cliquant dessus. Elles peuvent mettre un certain délais à
+        zoomer en fonction de votre connexion.
       </p>
       {renderedImages}
     </Layout>
