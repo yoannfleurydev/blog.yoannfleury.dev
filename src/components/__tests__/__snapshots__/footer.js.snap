@@ -36,6 +36,13 @@ exports[`Footer renders correctly 1`] = `
   >
     twitter
   </a>
+   
+  • 
+  <a
+    href="/photos"
+  >
+    photos
+  </a>
   <p>
     © 
     2019
