@@ -27,7 +27,7 @@ action "Deploy Blog" {
 }
 
 action "Notify Me" {
-  uses = "httpie"
+  uses = "swinton/httpie.action@master"
   needs = ["Deploy Blog"]
   secrets = ["FREE_ID_KEY", "FREE_USER"]
   args = ["GET", "https://smsapi.free-mobile.fr/sendmsg?user=FREE_USER&pass=FREE_ID_KEY&msg=Blog%deployed%20!"]
