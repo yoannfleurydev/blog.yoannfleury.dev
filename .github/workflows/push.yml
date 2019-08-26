@@ -1,0 +1,39 @@
+on:
+  push:
+    branches:
+    - develop
+
+jobs:
+  buildAndDeploy: 
+    name: Build and Deploy Blog
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Install packages
+      uses: actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680
+      with:
+        args: install
+
+    - name: Build Blog
+      uses: actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680
+      with:
+        args: run build
+
+    - name: Deploy Blog
+      uses: peaceiris/actions-gh-pages@v1.0.1
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./public
+
+    - name: Notify Me
+      uses: swinton/httpie.action@master
+      env:
+        FREE_ID_KEY: ${{ secrets.FREE_ID_KEY }}
+        FREE_USER: ${{ secrets.FREE_USER }}
+      with:
+        args: GET smsapi.free-mobile.fr/sendmsg user==$FREE_USER pass==$FREE_ID_KEY
+          "msg=='Blog deployed !'"
