@@ -69,7 +69,7 @@ chaud histoire de voir mes changements sans changer d'espace de travail.
 
 Nous voilà dans la partie la plus intéressante ! Je possède un
 [Ducky Channel One 2 Mini RGB équipé de Cherry MX Brown](https://shop.hardware.fr/fiche/AR201810250029.html).
-C'est vraiment un super clavier mécanique compact qui me permet de le transporter avec sans perdre trop de place.
+C'est vraiment un super clavier mécanique compact qui me permet de le transporter avec moi sans perdre trop de place.
 
 ![Ducky Channel One 2 Mini RGB](./ducky.jpg)
 
