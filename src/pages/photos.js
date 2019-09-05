@@ -54,7 +54,7 @@ const Photos = ({ data, location }) => {
         ))}
       </div>
     )
-  }, [])
+  }, [images])
 
   return (
     <Layout location={location} title={data.site.siteMetadata.title}>
