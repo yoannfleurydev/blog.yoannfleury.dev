@@ -27,19 +27,19 @@ Le meuble maître de la pièce, le bureau. Sans lui, obligé de travailler avec 
 genoux, ce qui, on peut l'avouer, n'est pas très pratique ni confortable. C'est un châssis de
 bureau à taille adaptable électrique [E5B](https://www.amazon.fr/FLEXISPOT-Electrique-Assis-Debout-Inoxydable-Automatique/dp/B077JPC7PK)
 de la marque Flexispot. J'en suis très satisfait, il est de très bonne qualité, il me permet de
-régler finement le bureau sur 3 niveau: assis, semi-debout et debout. Il est également plutôt
+régler finement le bureau sur 3 niveaux: assis, semi-debout et debout. Il est également plutôt
 intéressant car il peut se régler au niveau de la largeur, ce qui me permet de choisir un plateau
 avec la largeur que je veux.
 
 ![1 mètre 14](./bureau_debout_114cm.jpg)
 
 L'avantage d'un bureau électrique par rapport à un bureau manuel est de pouvoir sauvegarder les
-différentes position pour tout le temps reprendre la même. Après, il est évidemment possible avec
+différentes positions pour tout le temps reprendre la même. Après, il est évidemment possible avec
 certains bureaux manuels de mettre des marques pour se souvenir de la hauteur.
 
 Pour ce qui est du plateau, j'ai fais au plus simple, un plateau [Linnmon](https://www.ikea.com/fr/fr/p/linnmon-plateau-brun-noir-10251352/)
 de chez Ikea, mais je regrette un peu ce choix, certes lors de l'achat ce n'était pas très cher, mais ça se ressent
-dans la durée. J’envisage donc de le changer dans quelques temps avec une planche plus résistante
+dans la durée. J’envisage donc de le changer dans quelque temps avec une planche plus résistante
 et que j'aurais moi-même teinte.
 
 # Le PC
@@ -51,7 +51,7 @@ l'écran, pas comme son prédécesseur où elle était dessous, avec une vue en 
 ![Lapin](https://media.giphy.com/media/12hNWZe9HHFO80/giphy.gif)
 
 Cette machine est vraiment puissante pour sa taille, ce qui est plutôt cool. Le seul inconvénient
-que je lui trouve pour le moment, c'est sa chaleur. Quand je suis en visio-conférence sur Zoom,
+que je lui trouve pour le moment, c'est sa chaleur. Quand je suis en visioconférence sur Zoom,
 elle a tendance à rapidement monter dans les +65°C et je le sens au niveau du clavier, ce qui n'est
 pas le plus agréable quand je n'utilise pas mon clavier externe.
 
@@ -63,7 +63,7 @@ Mon écran est plutôt vieux, c'est un Samsung S22D300 de mauvaise qualité (j'�
 couleurs sur cet écran par exemple). Je l'ai acheté il y a quelques années quand j'étais étudiant et
 que j'avais peu d'argent. Je ne le conseille donc pas, mais il m'est utile pour y mettre le [Zoom](https://zoom.us/),
 le [Slack](https://slack.com/intl/fr-fr/), ou alors le navigateur quand je suis en rechargement à
-chaud histoire de voir mes changements sans changer d'espace de travail.
+chaud, histoire de voir mes changements sans changer d'espace de travail.
 
 # Le clavier
 
@@ -97,7 +97,7 @@ Et le truc, c'est que
 [genre](https://open.spotify.com/playlist/1APGGAfEig9dXsZr8OIsVM?si=b9xSJupdSq6Simg1sFxxgQ)
 [en](https://open.spotify.com/playlist/6czL7oQHmWQtZGNy0kVnKb?si=HRfsi3VaSCm8fvA9KRPm3g)
 [développant](https://open.spotify.com/playlist/58A3bBcIXXyJJFS9uyh0El?si=h1oNxGNpRtORDb8h3lZDmQ),
-ça me donne une pèche énorme.
+ça me donne une pêche énorme.
 
 Ici, je voulais donc de la qualité et avec le Bluetooth pour éviter encore plus de fils, et sur les
 précieux conseils d'un ami, je suis parti sur des Edifier R1280DB Bois. Ce sont de très bonnes
@@ -111,7 +111,7 @@ parfaitement.
 * Un [support pour téléphone](https://www.ikea.com/fr/fr/p/bergenes-support-telephone-portable-tablette-bambou-10457999/)
   qui m'est pas mal utile lors de développement perso pour du web mobile.
 * Une petite plante, parce qu'un peu de verdure ne fait pas de mal.
-* Un ampoule Philips Hue derrière l'écran et une autre au plafond pour jouer un peu sur la lumière
+* Une ampoule Philips Hue derrière l'écran et une autre au plafond pour jouer un peu sur la lumière
   de la pièce en fonction de mon humeur.
 
 ![Bureau de face avec ampoule allumé en rouge](./bureau_complet_face_hue_on.jpg)
