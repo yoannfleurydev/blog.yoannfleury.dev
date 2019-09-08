@@ -1,3 +1,4 @@
+name: Deployment
 on:
   push:
     branches:
@@ -23,9 +24,9 @@ jobs:
         args: run build
 
     - name: Deploy Blog
-      uses: peaceiris/actions-gh-pages@v1.0.1
+      uses: peaceiris/actions-gh-pages@v2.2.0
       env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
 

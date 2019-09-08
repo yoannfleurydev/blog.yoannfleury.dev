@@ -7,7 +7,9 @@
   Blog's source code <a href="https://blog.yoannfleury.dev">blog.yoannfleury.dev</a>
 </h1>
 
-> This blog source code is provided by Gatsby. It helped me to set up a blog very quickly. Go check [Gatsby website](https://www.gatsbyjs.org) for more informations about the project
+![Deployment status](https://github.com/yoannfleurydev/yoannfleurydev.github.io/workflows/Deployment/badge.svg)
+
+> This blog source code is provided by Gatsby. It helped me to set up a blog very quickly. Go check [Gatsby website](https://www.gatsbyjs.org) for more informations about the project.
 
 ## 🚀 Quick start
 
