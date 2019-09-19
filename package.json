@@ -8,12 +8,12 @@
     "url": "https://github.com/yoannfleurydev/yoannfleurydev.github.io/issues"
   },
   "dependencies": {
-    "gatsby": "2.15.17",
+    "gatsby": "2.15.18",
     "gatsby-cli": "2.7.48",
     "gatsby-image": "2.2.19",
     "gatsby-plugin-feed": "2.3.12",
     "gatsby-plugin-google-analytics": "2.1.16",
-    "gatsby-plugin-manifest": "2.2.16",
+    "gatsby-plugin-manifest": "2.2.17",
     "gatsby-plugin-offline": "3.0.7",
     "gatsby-plugin-react-helmet": "3.1.7",
     "gatsby-plugin-sharp": "2.2.24",
