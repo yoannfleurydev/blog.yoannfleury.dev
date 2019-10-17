@@ -8,8 +8,8 @@
     "url": "https://github.com/yoannfleurydev/yoannfleurydev.github.io/issues"
   },
   "dependencies": {
-    "gatsby": "2.16.3",
-    "gatsby-cli": "2.8.1",
+    "gatsby": "2.16.4",
+    "gatsby-cli": "2.8.2",
     "gatsby-image": "2.2.29",
     "gatsby-plugin-feed": "2.3.18",
     "gatsby-plugin-google-analytics": "2.1.23",
