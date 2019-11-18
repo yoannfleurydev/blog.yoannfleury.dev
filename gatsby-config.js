@@ -31,6 +31,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/pages`,
+        name: `pages`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -44,8 +51,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images-medium-zoom`,
             options: {
-              background: "#282c35"
-            }
+              background: "#282c35",
+            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -69,7 +76,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-147409206-1',
+        trackingId: "UA-147409206-1",
       },
     },
     {
