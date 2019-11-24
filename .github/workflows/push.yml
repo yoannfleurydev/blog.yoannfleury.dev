@@ -5,7 +5,7 @@ on:
     - develop
 
 jobs:
-  buildAndDeploy: 
+  buildAndDeploy:
     name: Build and Deploy Blog
 
     runs-on: ubuntu-latest
@@ -13,22 +13,22 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - name: Install packages
-      uses: actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680
+    - name: Setup Node
+      uses: actions/setup-node@v1
       with:
-        args: install
+        node-version: '12.x'
 
-    - name: Build Blog
-      uses: actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680
-      with:
-        args: run build
+    - run: yarn
+    - run: yarn build
 
     - name: Deploy Blog
-      uses: peaceiris/actions-gh-pages@v2.2.0
       env:
         PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
+      run: |
+        wget https://raw.githubusercontent.com/peaceiris/actions-gh-pages/v2.5.0/entrypoint.sh
+        bash ./entrypoint.sh
 
     - name: Notify Me
       uses: swinton/httpie.action@master

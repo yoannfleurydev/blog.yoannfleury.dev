@@ -6,7 +6,15 @@ Cette page est inspirée de la page [Uses](https://wesbos.com/uses/) de [Wes Bos
 
 # Editeur
 
-- J'utilise [Visual Studio Code](https://code.visualstudio.com/) au quotidien. J'ai beaucoup utilisé [IntelliJ](https://www.jetbrains.com/idea/) par le passé.
+- J'utilise [Visual Studio Code](https://code.visualstudio.com/) au quotidien. J'ai beaucoup utilisé [IntelliJ](https://www.jetbrains.com/idea/) par le passé. Au niveau des extensions plutôt pratiques (celles qui sont multilangages, donc pas de thème ni de coloration syntaxique par exemple), j'utilise les suivantes:
+  - Bracket Pair Colorizer `coenraads.bracket-pair-colorizer`
+  - Color Highlight `naumovs.color-highlight`
+  - EditorConfig for VS Code `editorconfig.editorconfig`
+  - Gitlab Merge Request Upvotes `yoannfleurydev.gitlab-merge-request-upvotes`
+  - Live Share `ms-vsliveshare.vsliveshare`
+  - Project Manager `alefragnani.project-manager`
+  - Settings Sync `shan.code-settings-sync`
+
 - [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) le thème de l'éditeur [Atom](https://atom.io/) est mon thème en général.
 - Pour la police, j'utilise [Cascadia Code](https://github.com/microsoft/cascadia-code) qui me plait bien, et avant, j'utilisais [Fira Code](https://github.com/tonsky/FiraCode) qui supporte elle aussi les ligatures.
 
@@ -19,7 +27,7 @@ Cette page est inspirée de la page [Uses](https://wesbos.com/uses/) de [Wes Bos
 ## Linux
 
 - [Alacritty](https://github.com/jwilm/alacritty) est mon terminal par défaut. Ecrit en Rust, il est rapide et simple.
-- Certain pourront crier à l'hérésie, mais j'utilise le Shell non compatible POSIX [Fish](https://fishshell.com/)
+- Certains pourront crier à l'hérésie, mais j'utilise le Shell non compatible POSIX [Fish](https://fishshell.com/)
 - Pour éviter l'enfer des nombreux terminaux ouverts, j'utilise [tmux](https://github.com/tmux/tmux) qui est un multiplexeur de terminal.
 
 # Applications de bureau

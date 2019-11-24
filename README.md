@@ -19,7 +19,7 @@
 
     ```sh
     cd yoannfleurydev.github.io/
-    gatsby develop # or npm run develop
+    gatsby develop # or yarn develop
     ```
 
 1.  **Open the source code and start editing!**
