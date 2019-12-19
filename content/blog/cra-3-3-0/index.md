@@ -73,7 +73,7 @@ const user = {
 const notBoom = user.realm?.castle; // undefined
 ```
 
-Ici, notre code va affecter `undefined` dans la variable `notBoot` sans
+Ici, notre code va affecter `undefined` dans la variable `notBoom` sans
 déclancher de `TypeError`.
 
 ## Union sur la `null`ité
