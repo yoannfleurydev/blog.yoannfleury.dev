@@ -8,8 +8,8 @@
     "url": "https://github.com/yoannfleurydev/yoannfleurydev.github.io/issues"
   },
   "dependencies": {
-    "gatsby": "2.18.17",
-    "gatsby-cli": "2.8.22",
+    "gatsby": "2.18.18",
+    "gatsby-cli": "2.8.23",
     "gatsby-image": "2.2.37",
     "gatsby-plugin-feed": "2.3.25",
     "gatsby-plugin-google-analytics": "2.1.31",
@@ -22,7 +22,7 @@
     "gatsby-remark-images": "3.1.39",
     "gatsby-remark-images-medium-zoom": "1.4.0",
     "gatsby-remark-images-zoom": "1.1.0",
-    "gatsby-remark-prismjs": "3.3.28",
+    "gatsby-remark-prismjs": "3.3.29",
     "gatsby-remark-responsive-iframe": "2.2.30",
     "gatsby-remark-smartypants": "2.1.19",
     "gatsby-source-filesystem": "2.1.43",
