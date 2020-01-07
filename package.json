@@ -42,7 +42,7 @@
   "devDependencies": {
     "babel-jest": "24.9.0",
     "babel-preset-gatsby": "0.2.26",
-    "gh-pages": "2.1.1",
+    "gh-pages": "2.2.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.9.0",
     "prettier": "1.19.1",
