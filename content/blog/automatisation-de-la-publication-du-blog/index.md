@@ -125,7 +125,7 @@ Les Github Actions peuvent être éditées sous deux formes :
 
 1. Textuellement
 
-```workflow
+```
 workflow "Build and Deploy Blog" {
   on = "push"
   resolves = ["Deploy Blog"]
@@ -163,7 +163,7 @@ Il est possible d'utiliser des secrets, ce qui est pratique dans mon cas pour
 simuler un commit de ma part depuis les actions. Reprenons ensemble le fichier
 d'action bloc par bloc :
 
-```workflow
+```
 workflow "Build and Deploy Blog" {
   on = "push"
   resolves = ["Deploy Blog"]
@@ -174,7 +174,7 @@ Ce premier bloc défini le nom du _workflow_, l'événement à écouter pour se
 lancer (ici le `push`) et défini également quelle est l'action qui termine le
 _workflow_.
 
-```workflow
+```
 action "Install packages" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   args = "install"
@@ -186,7 +186,7 @@ du projet. Elle utilise une image d'action `npm` sur le _commit_ `59b64a`. Il
 suffit de donner à cette image un argument, qui est ici `install`, car on
 souhaite lancer `npm install` dans le _workflow_.
 
-```workflow
+```
 action "Build Blog" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Install packages"]
@@ -197,7 +197,7 @@ action "Build Blog" {
 La deuxième action dépend de la bonne résolution de l'action précédente
 `needs = ["Install packages"]` et construit le site statique `npm run build`
 
-```workflow
+```
 action "Deploy Blog" {
   needs = "Build Blog"
   uses = "peaceiris/actions-gh-pages@v1.0.1"
