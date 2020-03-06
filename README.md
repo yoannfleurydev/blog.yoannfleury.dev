@@ -8,6 +8,7 @@
 </h1>
 
 ![Deployment status](https://github.com/yoannfleurydev/yoannfleurydev.github.io/workflows/Deployment/badge.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ee497249-2592-475e-a222-8c34068221f1/deploy-status)](https://app.netlify.com/sites/blog-yoannfleury-dev/deploys)
 
 > This blog source code is provided by Gatsby. It helped me to set up a blog very quickly. Go check [Gatsby website](https://www.gatsbyjs.org) for more informations about the project.
 
