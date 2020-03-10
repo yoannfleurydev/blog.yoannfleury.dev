@@ -1,4 +1,4 @@
-name: Deployment
+name: Build
 on:
   push:
     branches:
@@ -20,15 +20,6 @@ jobs:
 
     - run: yarn
     - run: yarn build
-
-    - name: Deploy Blog
-      env:
-        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-        PUBLISH_BRANCH: master
-        PUBLISH_DIR: ./public
-      run: |
-        wget https://raw.githubusercontent.com/peaceiris/actions-gh-pages/v2.5.0/entrypoint.sh
-        bash ./entrypoint.sh
 
     - name: Notify Me On Failure
       if: failure() || cancelled()
