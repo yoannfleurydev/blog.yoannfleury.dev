@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const NotFoundPage = ({
   data: {
@@ -27,10 +27,10 @@ const NotFoundPage = ({
         alt="Chat sur un robot aspirateur"
       />
     </Layout>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
 
 export const pageQuery = graphql`
   query {
@@ -40,4 +40,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

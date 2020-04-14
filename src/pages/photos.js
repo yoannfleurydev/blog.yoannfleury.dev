@@ -1,19 +1,19 @@
-import React from "react"
-import SEO from "../components/seo"
-import Layout from "../components/layout"
-import { graphql } from "gatsby"
-import mediumZoom from "medium-zoom"
+import React from "react";
+import SEO from "../components/seo";
+import Layout from "../components/layout";
+import { graphql } from "gatsby";
+import mediumZoom from "medium-zoom";
 
 class ImageZoom extends React.Component {
   // Leave this part so I can add a calculated color later.
   // Calculated color will be like Twitter, the most present color in the image.
   zoom = this.props.zoom.clone({
     background: this.props.color,
-  })
+  });
 
-  attachZoom = image => {
-    this.zoom.attach(image)
-  }
+  attachZoom = (image) => {
+    this.zoom.attach(image);
+  };
 
   render() {
     return (
@@ -23,13 +23,13 @@ class ImageZoom extends React.Component {
         ref={this.attachZoom}
         data-zoom-src={this.props.zoomSrc}
       />
-    )
+    );
   }
 }
 
 const Photos = ({ data, location }) => {
-  const [renderedImages, setRenderedImages] = React.useState(<div />)
-  const images = data.allFile.edges
+  const [renderedImages, setRenderedImages] = React.useState(<div />);
+  const images = data.allFile.edges;
 
   React.useEffect(() => {
     setRenderedImages(
@@ -53,8 +53,8 @@ const Photos = ({ data, location }) => {
           />
         ))}
       </div>
-    )
-  }, [images])
+    );
+  }, [images]);
 
   return (
     <Layout location={location} title={data.site.siteMetadata.title}>
@@ -67,10 +67,10 @@ const Photos = ({ data, location }) => {
       </p>
       {renderedImages}
     </Layout>
-  )
-}
+  );
+};
 
-export default Photos
+export default Photos;
 
 export const pageQuery = graphql`
   query {
@@ -99,4 +99,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

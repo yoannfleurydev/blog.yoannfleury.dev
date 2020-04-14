@@ -20,8 +20,8 @@ export default () => {
           }
         }
       `}
-      render={data => {
-        const pages = data.allMarkdownRemark.edges.map(edge => ({
+      render={(data) => {
+        const pages = data.allMarkdownRemark.edges.map((edge) => ({
           title: edge.node.frontmatter.title,
           slug: edge.node.fields.slug,
         }));
@@ -51,7 +51,7 @@ export default () => {
               twitter
             </a>{" "}
             &bull; <Link to="/photos">photos</Link>
-            {pages.map(page => (
+            {pages.map((page) => (
               <>
                 {" "}
                 &bull; <Link to={page.slug}>{page.title.toLowerCase()}</Link>
