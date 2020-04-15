@@ -1,12 +1,14 @@
 body {
-  --blue: rgb(11, 134, 172);
+  --pink: 255, 180, 233;
+  --rgb-darker-pink: rgb(177, 84, 149);
+  --rgb-pink: rgb(var(--pink));
   --bg: #ffffff;
-  --header: var(--blue);
+  --header: var(--rgb-pink);
   --textNormal: #222;
   --textTitle: #222;
-  --textLink: var(--blue);
+  --textLink: var(--rgb-darker-pink);
   --hr: hsla(0, 0%, 0%, 0.2);
-  --inlineCode-bg: rgba(255, 229, 100, 0.2);
+  --inlineCode-bg: rgba(var(--pink), 0.5);
   --inlineCode-text: #1a1a1a;
   background-color: var(--bg);
 }
@@ -19,11 +21,11 @@ a {
   body {
     -webkit-font-smoothing: antialiased;
 
-    --bg: #282c35;
+    --bg: #0b0b0e;
     --header: #ffffff;
     --textNormal: rgba(255, 255, 255, 0.88);
     --textTitle: #ffffff;
-    --textLink: var(--blue);
+    --textLink: var(--rgb-pink);
     --hr: hsla(0, 0%, 100%, 0.2);
     --inlineCode-bg: hsl(222, 14%, 25%);
     --inlineCode-text: #e6e6e6;
