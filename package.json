@@ -8,8 +8,8 @@
     "url": "https://github.com/yoannfleurydev/yoannfleurydev.github.io/issues"
   },
   "dependencies": {
-    "gatsby": "2.20.30",
-    "gatsby-cli": "2.11.16",
+    "gatsby": "2.20.35",
+    "gatsby-cli": "2.11.21",
     "gatsby-image": "2.3.5",
     "gatsby-plugin-feed": "2.4.4",
     "gatsby-plugin-google-analytics": "2.2.5",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "babel-jest": "25.4.0",
-    "babel-preset-gatsby": "0.3.5",
+    "babel-preset-gatsby": "0.3.6",
     "gh-pages": "2.2.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "25.4.0",
