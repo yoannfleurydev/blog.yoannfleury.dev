@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/yoannfleurydev
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://blog.yoannfleury.dev
+  * I am yoannfleurydev (https://keybase.io/yoannfleurydev) on keybase.
+  * I have a public key ASDRfr1P_ZsJtpyBiXbUuVcWNZ0iSJFxsVYnLaAIIozDHQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d17ebd4ffd9b09b69c818976d4b95716359d22489171b156272da008228cc31d0a",
+      "host": "keybase.io",
+      "kid": "0120d17ebd4ffd9b09b69c818976d4b95716359d22489171b156272da008228cc31d0a",
+      "uid": "47d842a68452be80af2fc9c7ea868419",
+      "username": "yoannfleurydev"
+    },
+    "merkle_root": {
+      "ctime": 1588439664,
+      "hash": "05aadb1c9abc32abbcb7366a2e88d35e470d1311f58af79a0893a45bac708c430acb7959ef56cf641ccac60cb1ac41b57a3f14c1a49576e66bf281ee7b1f0486",
+      "hash_meta": "a07d2daeb1ce1898b67be777174403ebab4650d4037abc514f77a6369e64caaf",
+      "seqno": 16133850
+    },
+    "service": {
+      "entropy": "n7ttavaremrrv5xz0QVHrxQa",
+      "hostname": "blog.yoannfleury.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.2"
+  },
+  "ctime": 1588439702,
+  "expire_in": 504576000,
+  "prev": "cee00992f62f11777320981a3e6b029ebc3e36b2f87173d26e48c7e039450867",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg0X69T/2bCbacgYl21LlXFjWdIkiRcbFWJy2gCCKMwx0Kp3BheWxvYWTESpcCB8QgzuAJkvYvEXdzIJgaPmsCnrw+NrL4cXPSbkjH4DlFCGfEIGiDklscHuRFSiOLGj/yRvXe9Zj1sGis1rI4xAFVFx6XAgHCo3NpZ8RAvPSLCV5Ux7gLi2InKQTDGNUYMzR/505Njr7rU/ZF0Ul5eZYLp4H+I5gxlP9f/MAJaekp8eLytq6ttClwD4NXAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOkgkq+QOmepqdsH3vj9Wwt84IN9VbI9vzzVsC/OlJ9Io3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/yoannfleurydev
+
+==================================================================
