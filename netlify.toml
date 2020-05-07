@@ -3,3 +3,9 @@
 
 [build]
  ignore = "git log -1 --pretty=%B | grep '(deps)'"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
