@@ -6916,10 +6916,10 @@ gatsby-remark-copy-linked-files@2.3.2:
     probe-image-size "^4.1.1"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-images-medium-zoom@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images-medium-zoom/-/gatsby-remark-images-medium-zoom-1.5.0.tgz#e77d852817ba7fef6858487e0f3e94c77997cfae"
-  integrity sha512-8pLVwh8kdTSNE1YHKc4bMEW9h7HKBO12/omAvPxg+/L0nQtqG3DVx5xccRnBSICjK6WQf2XXy6XoMtyGOgZnJQ==
+gatsby-remark-images-medium-zoom@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images-medium-zoom/-/gatsby-remark-images-medium-zoom-1.6.0.tgz#4790a3c0f36cb74c83425eb5c924ed713efc7ea1"
+  integrity sha512-3SokUw0HQ0J8NyunVLluk8Q3BjZZMUwHq7HX9GFc2+geu32EcLm8Ys4iP60nRST1TK9D0mTkFBc8vuIE+KH89g==
   dependencies:
     medium-zoom "^1.0.4"
 
