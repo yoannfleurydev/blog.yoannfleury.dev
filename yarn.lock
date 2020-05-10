@@ -1246,6 +1246,11 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@fastly/performance-observer-polyfill@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@fastly/performance-observer-polyfill/-/performance-observer-polyfill-1.1.1.tgz#2e64762fa2e43f32c01dcb2ac68421aded55bbb8"
+  integrity sha512-hmXJBYhIs77KPyg/IcPM5sDeQSPLrTzD6DqGfSUUtvEUoQxbW6nxHYCYJE8CP+Ay+OUqLZlTpW+w1OEOZWckzQ==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -6916,11 +6921,12 @@ gatsby-remark-copy-linked-files@2.3.2:
     probe-image-size "^4.1.1"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-images-medium-zoom@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images-medium-zoom/-/gatsby-remark-images-medium-zoom-1.6.0.tgz#4790a3c0f36cb74c83425eb5c924ed713efc7ea1"
-  integrity sha512-3SokUw0HQ0J8NyunVLluk8Q3BjZZMUwHq7HX9GFc2+geu32EcLm8Ys4iP60nRST1TK9D0mTkFBc8vuIE+KH89g==
+gatsby-remark-images-medium-zoom@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images-medium-zoom/-/gatsby-remark-images-medium-zoom-1.7.0.tgz#b9a55ebf29a4a15f9e7da7a8f4d0dfbe47aa5717"
+  integrity sha512-TLaq+ua+nO2CX/B/FnWB0OvJiLdplzbRCXrgCxYoZs3RkN5IfUu9BJYKEFjzx6J3uhwLvBA7XqE5cFOZ2cu4AQ==
   dependencies:
+    "@fastly/performance-observer-polyfill" "^1.1.1"
     medium-zoom "^1.0.4"
 
 gatsby-remark-images-zoom@1.1.0:
