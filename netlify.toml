@@ -2,7 +2,7 @@
   package = "netlify-plugin-gatsby-cache"
 
 [build]
- ignore = "git log -1 --pretty=%B -- | grep '(deps)'"
+ ignore = "git log -1 --pretty=%B | grep '(deps)'"
 
 [[headers]]
   for = "/*"
