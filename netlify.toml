@@ -2,10 +2,12 @@
   package = "netlify-plugin-gatsby-cache"
 
 [build]
- ignore = "git log -1 --pretty=%B | grep '(deps)'"
+ ignore = "git log -1 --pretty=%B -- | grep '(deps)'"
 
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Content-Security-Policy = "frame-ancestors 'none'"
