@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 
 const NotFoundPage = ({
   data: {
+    notFound: { publicURL },
     site: {
       siteMetadata: { title },
     },
@@ -22,10 +23,7 @@ const NotFoundPage = ({
           🤔
         </span>
       </p>
-      <img
-        src="https://media.giphy.com/media/bMnnmNo087fgs/giphy.gif"
-        alt="Chat sur un robot aspirateur"
-      />
+      <img src={publicURL} alt="404 Not Found" />
     </Layout>
   );
 };
@@ -34,6 +32,9 @@ export default NotFoundPage;
 
 export const pageQuery = graphql`
   query {
+    notFound: file(absolutePath: { regex: "/404.gif/" }) {
+      publicURL
+    }
     site {
       siteMetadata {
         title
