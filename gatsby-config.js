@@ -49,12 +49,6 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-images-medium-zoom`,
-            options: {
-              background: "#282c35",
-            },
-          },
-          {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
