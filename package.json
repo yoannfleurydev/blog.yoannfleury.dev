@@ -58,7 +58,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --host 0.0.0.0",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "yarn develop",
