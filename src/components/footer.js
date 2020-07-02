@@ -52,10 +52,10 @@ export default () => {
             </a>{" "}
             &bull; <Link to="/photos">photos</Link>
             {pages.map((page) => (
-              <>
+              <React.Fragment key={page.slug}>
                 {" "}
                 &bull; <Link to={page.slug}>{page.title.toLowerCase()}</Link>
-              </>
+              </React.Fragment>
             ))}
             <p>
               © {new Date().getFullYear()}, Mis à disposition grâce à{` `}
