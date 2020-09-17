@@ -1,30 +1,33 @@
 const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const pageCreation = await graphql(`
     query {
-      allMarkdownRemark(filter: { fields: { type: { eq: "pages" } } }) {
-        edges {
-          node {
+      allFile(filter: { sourceInstanceName: { eq: "pages" } }) {
+        nodes {
+          childMdx {
+            frontmatter {
+              title
+            }
             fields {
               slug
-              type
             }
+            body
           }
         }
       }
     }
   `);
 
-  pageCreation.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  pageCreation.data.allFile.nodes.forEach((node) => {
     createPage({
-      path: node.fields.slug,
+      path: node.childMdx.fields.slug,
       component: path.resolve(`./src/templates/pages.js`),
       context: {
-        slug: node.fields.slug,
+        post: node.childMdx,
       },
     });
   });
@@ -33,18 +36,22 @@ exports.createPages = async ({ graphql, actions }) => {
   const blogPostResult = await graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-          filter: { frontmatter: { published: { eq: true } } }
+        allFile(
+          filter: {
+            sourceInstanceName: { eq: "blog" }
+            extension: { eq: "mdx" }
+            childMdx: { frontmatter: { published: { eq: true } } }
+          }
         ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
+          nodes {
+            childMdx {
               frontmatter {
                 title
+                date(formatString: "DD/MM/YYYY")
+              }
+              body
+              fields {
+                slug
               }
             }
           }
@@ -58,17 +65,17 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Create blog posts pages.
-  const posts = blogPostResult.data.allMarkdownRemark.edges;
+  const posts = blogPostResult.data.allFile.nodes;
 
   posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;
+    const previous = index === posts.length - 1 ? undefined : posts[index + 1];
+    const next = index === 0 ? undefined : posts[index - 1];
 
     createPage({
-      path: post.node.fields.slug,
+      path: post.childMdx.fields.slug,
       component: blogPost,
       context: {
-        slug: post.node.fields.slug,
+        post,
         previous,
         next,
       },
@@ -81,7 +88,7 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode });
 
     createNodeField({

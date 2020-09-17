@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 
 import { rhythm, scale } from "../utils/typography";
 import Footer from "./footer";
+import { Provider } from "./MDX/Provider";
 
 export default ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -60,7 +61,11 @@ export default ({ location, title, children }) => {
       }}
     >
       <header>{header}</header>
-      <main>{children}</main>
+      <main>
+        <Provider>
+          {children}
+        </Provider>
+      </main>
       <Footer />
     </div>
   );

@@ -1,23 +1,25 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
-import Bio from "../components/bio";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import { rhythm, scale } from "../utils/typography";
+import Bio from "components/bio";
+import Layout from "components/layout";
+import SEO from "components/seo";
+import { rhythm, scale } from "utils/typography";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
-  const { previous, next } = pageContext;
+  const { post, previous, next } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        title={post.childMdx.frontmatter.title}
+        description={
+          post.childMdx.frontmatter.description || post.childMdx.excerpt
+        }
       />
-      <h1>{post.frontmatter.title}</h1>
+      <h1>{post.childMdx.frontmatter.title}</h1>
       <p
         style={{
           ...scale(-1 / 5),
@@ -26,9 +28,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           marginTop: rhythm(-1),
         }}
       >
-        {post.frontmatter.date}
+        {post.childMdx.frontmatter.date}
       </p>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <MDXRenderer>{post.childMdx.body}</MDXRenderer>
       <hr
         style={{
           marginBottom: rhythm(1),
@@ -47,15 +49,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       >
         <li>
           {previous && (
-            <Link to={previous.fields.slug} rel="prev">
-              ← {previous.frontmatter.title}
+            <Link to={previous.childMdx.fields.slug} rel="prev">
+              ← {previous.childMdx.frontmatter.title}
             </Link>
           )}
         </li>
         <li>
           {next && (
-            <Link to={next.fields.slug} rel="next">
-              {next.frontmatter.title} →
+            <Link to={next.childMdx.fields.slug} rel="next">
+              {next.childMdx.frontmatter.title} →
             </Link>
           )}
         </li>
@@ -67,21 +69,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query {
     site {
       siteMetadata {
         title
-        author
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "DD/MM/YYYY")
-        description
       }
     }
   }

@@ -1,31 +1,28 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import Layout from "components/layout";
+import SEO from "components/seo";
 
-export default ({ data, location }) => {
+export default ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title;
-  const post = data.markdownRemark;
+  const { post } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
+      <SEO title={post.frontmatter.title} />
       <div>
         <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <MDXRenderer>{post.body}</MDXRenderer>
       </div>
     </Layout>
   );
 };
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query {
     site {
       siteMetadata {
-        title
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
         title
       }
     }
