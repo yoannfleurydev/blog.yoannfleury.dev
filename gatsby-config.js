@@ -78,17 +78,30 @@ module.exports = {
       options: {
         feeds: [
           {
+            serialize: ({ query: { site, allFile } }) => {
+              return allFile.nodes.map((node) => {
+                return Object.assign({}, node.childMdx.frontmatter, {
+                  description: node.childMdx.excerpt,
+                  date: node.childMdx.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.childMdx.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.childMdx.fields.slug,
+                  custom_elements: [{ "content:encoded": node.childMdx.html }],
+                });
+              });
+            },
             query: `
               {
-                allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {
-                  frontmatter: {
-                    published: {
-                      eq: true
+                allFile(sort: {order: DESC, fields: [childMdx___frontmatter___date]}, filter: {
+                  childMdx:{
+                    frontmatter : {
+                      published: {
+                        eq : true
+                      }
                     }
                   }
                 }) {
-                  edges {
-                    node {
+                  nodes {
+                    childMdx {
                       excerpt
                       html
                       fields {
