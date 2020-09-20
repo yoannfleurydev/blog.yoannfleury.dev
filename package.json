@@ -8,6 +8,7 @@
     "url": "https://github.com/yoannfleurydev/yoannfleurydev.github.io/issues"
   },
   "dependencies": {
+    "@chakra-ui/core": "1.0.0-rc.3",
     "@mdx-js/mdx": "1.6.18",
     "@mdx-js/react": "1.6.18",
     "gatsby": "2.24.62",
@@ -33,6 +34,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0",
+    "react-icons": "3.11.0",
     "react-typography": "0.16.19",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",

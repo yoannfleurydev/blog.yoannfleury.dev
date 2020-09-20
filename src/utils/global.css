@@ -8,8 +8,9 @@ body {
   --hr: hsla(0 0% 0% 0.2);
   --inlineCode-bg: rgba(var(--pink) 0.5);
   --inlineCode-text: #1a1a1a;
+  --warning: #ffd2a7;
   background-color: var(--bg);
-  border: 10px solid var(--rgb-pink)
+  border: 10px solid var(--rgb-pink);
 }
 
 a {
@@ -17,7 +18,7 @@ a {
 }
 
 blockquote {
-  border-left:0.32813rem solid var(--rgb-pink);
+  border-left: 0.32813rem solid var(--rgb-pink);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -202,4 +203,12 @@ pre[data-line] {
 .gatsby-highlight pre[class*="language-"] {
   float: left;
   min-width: 100%;
+}
+
+.a-alert.as--warning {
+  border: 1rem solid var(--warning);
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }

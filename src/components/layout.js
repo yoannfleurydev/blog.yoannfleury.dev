@@ -62,9 +62,7 @@ export default ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>
-        <Provider>
-          {children}
-        </Provider>
+        <Provider>{children}</Provider>
       </main>
       <Footer />
     </div>
