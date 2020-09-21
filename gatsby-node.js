@@ -48,6 +48,13 @@ exports.createPages = async ({ graphql, actions }) => {
               frontmatter {
                 title
                 date(formatString: "DD/MM/YYYY")
+                ogImage {
+                  childImageSharp {
+                    original {
+                      src
+                    }
+                  }
+                }
               }
               body
               fields {

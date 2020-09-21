@@ -18,6 +18,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={
           post.childMdx.frontmatter.description || post.childMdx.excerpt
         }
+        ogImage={
+          post.childMdx.frontmatter?.ogImage?.childImageSharp?.original?.src
+        }
       />
       <h1>{post.childMdx.frontmatter.title}</h1>
       <p
