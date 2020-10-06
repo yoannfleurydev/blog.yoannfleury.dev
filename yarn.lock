@@ -16301,15 +16301,15 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-merriweather@0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-merriweather/-/typeface-merriweather-0.0.72.tgz#2b990f5293252052d51d170c82d3892319ff0555"
-  integrity sha512-gO0+fcZ1fTyKUsYY1ltYOOTI6FmBGeEdyIfeQg9NL8aInndk0feiJJVJsKHm/DiyYrnQEezraAQhz/KQoqMGtw==
+typeface-merriweather@1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/typeface-merriweather/-/typeface-merriweather-1.1.9.tgz#4a2b2b0eee68f9ca36c87642c805f7a11b309e28"
+  integrity sha512-g32xjTjPkxrT2kDpgopB3+9/8aAhY/pHbEpPXqk0lDWkOuzizF4FaUmQ1sTmCHcd8GtS1URZrCjUs5WabQWnsg==
 
-typeface-montserrat@0.0.75:
-  version "0.0.75"
-  resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz#b796d9c767ab8ed1343271985beb1e44b382b7b3"
-  integrity sha512-8ski20t3hdwu2T85pVfjK4jsDbwW8yWzd+LAKxYEmu+JVLVlB7G2yfmdKZz06pUwYCLVFvHvup+NYYulHDpE+w==
+typeface-montserrat@1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-1.1.9.tgz#a2a3b35633882ba368ff76301985007a74c8af13"
+  integrity sha512-hVptaf+NaOJS10O5rsS7yXpe5Kv2WPO+oL1pCT9SolQ2VwZAD2OcfnTmX66dAJdduV3txOqZdwRA85OE68HBIQ==
 
 typography-breakpoint-constants@^0.16.19:
   version "0.16.19"
