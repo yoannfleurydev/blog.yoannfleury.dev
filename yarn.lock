@@ -7599,7 +7599,52 @@ gatsby-alias-imports@1.0.4:
   resolved "https://registry.yarnpkg.com/gatsby-alias-imports/-/gatsby-alias-imports-1.0.4.tgz#09177ad05aa24f321813e713de5fd7aa2b8ec5b1"
   integrity sha512-6ov7Qd/cKdEaqrABlPUNDXWHGn8HJpU/TGm0/htBAi4nSfFJWq6EEw9apzWHfR8IoVwjHExlX5wD7Y4qKjMV0w==
 
-gatsby-cli@2.12.103, gatsby-cli@^2.12.103:
+gatsby-cli@2.12.104:
+  version "2.12.104"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.12.104.tgz#c522ea6297dede65bca6666fbae971939b2a8dfa"
+  integrity sha512-AblYqqvZWRZpN07iL4SvgIoiko8cYIB6goH+PcqRZCt0qbpsRsagN3Lupfw//E6tJ8qT9qUBZF3uSEhe/kTtoA==
+  dependencies:
+    "@babel/code-frame" "^7.10.4"
+    "@hapi/joi" "^15.1.1"
+    "@types/common-tags" "^1.8.0"
+    better-opn "^2.0.0"
+    chalk "^2.4.2"
+    clipboardy "^2.3.0"
+    common-tags "^1.8.0"
+    configstore "^5.0.1"
+    convert-hrtime "^3.0.0"
+    envinfo "^7.7.3"
+    execa "^3.4.0"
+    fs-exists-cached "^1.0.0"
+    fs-extra "^8.1.0"
+    gatsby-core-utils "^1.3.23"
+    gatsby-recipes "^0.2.31"
+    gatsby-telemetry "^1.3.38"
+    hosted-git-info "^3.0.5"
+    ink "^2.7.1"
+    ink-spinner "^3.1.0"
+    is-valid-path "^0.1.1"
+    lodash "^4.17.20"
+    meant "^1.0.2"
+    node-fetch "^2.6.1"
+    opentracing "^0.14.4"
+    pretty-error "^2.1.1"
+    progress "^2.0.3"
+    prompts "^2.3.2"
+    react "^16.8.0"
+    redux "^4.0.5"
+    resolve-cwd "^3.0.0"
+    semver "^7.3.2"
+    signal-exit "^3.0.3"
+    source-map "0.7.3"
+    stack-trace "^0.0.10"
+    strip-ansi "^5.2.0"
+    update-notifier "^4.1.1"
+    uuid "3.4.0"
+    yargs "^15.4.1"
+    yurnalist "^1.1.2"
+
+gatsby-cli@^2.12.103:
   version "2.12.103"
   resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.12.103.tgz#57c7392955762e16dd9803189f0dccbc139e4e8c"
   integrity sha512-w3o/duuzISH0V+/tdqIwZRbEFWkXwK7HGi2ZFqopSMtm1EraZ0Kw8arMaiCtj5q3ks2eoKxYSPOlcWzr0EBIVg==
@@ -7741,10 +7786,10 @@ gatsby-plugin-feed@2.5.14:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-google-analytics@2.3.16:
-  version "2.3.16"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.16.tgz#df34cf35f0a6878adfb3e7f645dc58bad03f711e"
-  integrity sha512-yNTjXJMIuiO48hssLVKrD7EWQT8UP9OW5WPkbsjmPGLtmCfVQ+3Th+5ptBOjtYuyoifRoWmKXdIVgimUs0l5Sw==
+gatsby-plugin-google-analytics@2.3.17:
+  version "2.3.17"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.17.tgz#61207d253b69e8ab606ebff75e074c1774d108bb"
+  integrity sha512-0s8m2BPBBsccCIFE2rUl98Ir/JE273cyPwfFB1PrtNz6rVmbRrm8AWKJvGXlZiPAfMUuBhT39vCgTvrCDp4phw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     minimatch "3.0.4"
@@ -7759,10 +7804,10 @@ gatsby-plugin-manifest@2.4.34:
     semver "^7.3.2"
     sharp "^0.25.4"
 
-gatsby-plugin-mdx@1.2.44:
-  version "1.2.44"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.2.44.tgz#31bcb71ff3523378a18116d098b2ff6308d5f6c7"
-  integrity sha512-ITtx/Uv1cMeJv9qPZRWFbGcIK4s7gfX/cgBsLYBaGT2OF7PZJbM7WknEOtmnechE/EKBklYNcWNvxScPfnfVQQ==
+gatsby-plugin-mdx@1.2.45:
+  version "1.2.45"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.2.45.tgz#b4e20b73f7a267eccdeeebe31da107b910892b65"
+  integrity sha512-Lq020aoN2ghDQjfjwOVcFt0n8nk+kuRw4h/o/Hc28DjApHxSbdFpm5a5mNXaeCULdQ6WVEwGhANCGga6SJmORg==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/generator" "^7.11.6"
