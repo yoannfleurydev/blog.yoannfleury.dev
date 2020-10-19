@@ -42,10 +42,10 @@
     "typography-theme-wordpress-2016": "0.16.19"
   },
   "devDependencies": {
-    "babel-jest": "26.5.2",
+    "babel-jest": "26.6.0",
     "babel-preset-gatsby": "0.5.14",
     "identity-obj-proxy": "3.0.0",
-    "jest": "26.5.3",
+    "jest": "26.6.0",
     "prettier": "2.1.2",
     "react-test-renderer": "16.14.0"
   },
