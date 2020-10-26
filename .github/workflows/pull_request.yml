@@ -21,6 +21,7 @@ jobs:
         id: netlify
         with:
           site_name: blog-yoannfleury-dev
+          max_timeout: 120
       - name: Audit with Lighthouse
         uses: treosh/lighthouse-ci-action@v3
         with:
