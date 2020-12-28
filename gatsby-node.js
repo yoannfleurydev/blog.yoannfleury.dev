@@ -42,6 +42,7 @@ exports.createPages = async ({ graphql, actions }) => {
             extension: { eq: "mdx" }
             childMdx: { frontmatter: { published: { eq: true } } }
           }
+          sort: { fields: childMdx___frontmatter___date, order: DESC }
         ) {
           nodes {
             childMdx {
