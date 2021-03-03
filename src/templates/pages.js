@@ -1,23 +1,26 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import { Heading } from "@chakra-ui/react";
 import Layout from "components/layout";
 import SEO from "components/seo";
 
-export default ({ data, pageContext, location }) => {
+const Pages = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const { post } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={post.frontmatter.title} />
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <MDXRenderer>{post.body}</MDXRenderer>
-      </div>
+      <Heading as="h1" color="brand.500" mt={8} fontWeight={800} size="2xl">
+        {post.frontmatter.title}
+      </Heading>
+      <MDXRenderer>{post.body}</MDXRenderer>
     </Layout>
   );
 };
+
+export default Pages;
 
 export const pageQuery = graphql`
   query {

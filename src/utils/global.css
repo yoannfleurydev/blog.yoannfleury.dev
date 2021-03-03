@@ -1,5 +1,6 @@
 body {
   --pink: 255 180 233;
+  --new-pink: #df9fa6;
   --rgb-darker-pink: rgb(177 84 149);
   --rgb-pink: rgb(var(--pink));
   --bg: #ffffff;
@@ -10,11 +11,6 @@ body {
   --inlineCode-text: #1a1a1a;
   --warning: #ffd2a7;
   background-color: var(--bg);
-  border: 10px solid var(--rgb-pink);
-}
-
-a {
-  color: var(--textLink);
 }
 
 blockquote {
@@ -46,7 +42,7 @@ hr {
 /*
   Based on copypasta from Remy Bach and Sarah Drasner
  */
-code[class*="language-"],
+/* code[class*="language-"],
 pre[class*="language-"] {
   color: white;
   background: none;
@@ -68,7 +64,7 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-}
+} */
 
 /* Code blocks */
 pre[class*="language-"] {
@@ -100,13 +96,13 @@ pre[class*="language-"] ::selection {
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+/* :not(pre) > code[class*="language-"] {
   border-radius: 0.3em;
   background: var(--inlineCode-bg);
   color: var(--inlineCode-text);
   padding: 0.15em 0.2em 0.05em;
   white-space: normal;
-}
+} */
 
 .token.attr-name {
   color: rgb(173, 219, 103);

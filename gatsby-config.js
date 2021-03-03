@@ -10,6 +10,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-alias-imports`,
+    `@chakra-ui/gatsby-plugin`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -49,12 +50,6 @@ module.exports = {
               maxWidth: 1200,
               quality: 90,
               disableBgImageOnAlpha: true,
-            },
-          },
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              aliases: { sh: "bash" },
             },
           },
           {

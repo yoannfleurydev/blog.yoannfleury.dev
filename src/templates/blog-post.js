@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
 
 import Bio from "components/bio";
 import Layout from "components/layout";
 import SEO from "components/seo";
-import { rhythm, scale } from "utils/typography";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -22,49 +22,37 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           post.childMdx.frontmatter?.ogImage?.childImageSharp?.original?.src
         }
       />
-      <h1>{post.childMdx.frontmatter.title}</h1>
-      <p
-        style={{
-          ...scale(-1 / 5),
-          display: `block`,
-          marginBottom: rhythm(1),
-          marginTop: rhythm(-1),
-        }}
+      <Heading as="h1" color="brand.500" mt={8} fontWeight={800} size="2xl">
+        {post.childMdx.frontmatter.title}
+      </Heading>
+      <Text
+        as="time"
+        dateTime={post.childMdx.frontmatter.datetime}
+        fontSize="sm"
+        my="1rem"
       >
         {post.childMdx.frontmatter.date}
-      </p>
+      </Text>
       <MDXRenderer>{post.childMdx.body}</MDXRenderer>
-      <hr
-        style={{
-          marginBottom: rhythm(1),
-        }}
-      />
+      <Divider my={8} />
       <Bio />
 
-      <ul
-        style={{
-          display: `flex`,
-          flexWrap: `wrap`,
-          justifyContent: `space-between`,
-          listStyle: `none`,
-          padding: 0,
-        }}
-      >
-        <li>
+      <Flex flexWrap="wrap" justifyContent="space-between" mt="2rem">
+        <Box _hover={{ textDecoration: "underline" }}>
           {previous && (
             <Link to={previous.childMdx.fields.slug} rel="prev">
               ← {previous.childMdx.frontmatter.title}
             </Link>
           )}
-        </li>
-        <li>
+        </Box>
+        <Box _hover={{ textDecoration: "underline" }}>
           {next && (
             <Link to={next.childMdx.fields.slug} rel="next">
               {next.childMdx.frontmatter.title} →
             </Link>
           )}
-        </li>
-      </ul>
+        </Box>
+      </Flex>
     </Layout>
   );
 };
