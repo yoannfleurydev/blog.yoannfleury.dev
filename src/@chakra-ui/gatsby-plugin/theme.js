@@ -14,6 +14,19 @@ const colors = {
     800: "#3b1216",
     900: "#1b0305",
   },
+  // Theme for CodeBlocks
+  darcula: {
+    50: "#eef1f9",
+    100: "#d3d4df",
+    200: "#b6b8c6",
+    300: "#999bb0",
+    400: "#7b7f99",
+    500: "#626580",
+    600: "#4c4f64",
+    700: "#373848",
+    800: "#282a37",
+    900: "#0b0b14",
+  },
 };
 
 const theme = extendTheme({
@@ -28,6 +41,9 @@ const theme = extendTheme({
       },
       a: {
         boxShadow: "none",
+      },
+      ".higligh-line": {
+        backgroundColor: "red",
       },
     },
   },

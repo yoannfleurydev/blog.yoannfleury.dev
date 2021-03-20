@@ -27,7 +27,7 @@ histoire que tu restes jusqu'au bout. `create-react-app` supporte désormais le
 [séparateur numérique](https://tc39.es/proposal-numeric-separator/) pour une
 lecture plus simple des grands nombres.
 
-```javascript{4-5}
+```javascript {4-5}
 1000000000; // C'est 1 milliard, 100 million, 10 million ?
 101475938.38; // Idem ici, quel est l'ordre de grandeur ?
 
@@ -40,7 +40,7 @@ lecture plus simple des grands nombres.
 Grâce au [chainage optionnel](https://tc39.es/proposal-optional-chaining/), on
 gagne en concision et en sûreté de code. Prenons l'exemple suivant :
 
-```javascript{7-8}
+```javascript {7-8}
 const user = {
   firstname: "Léodagan",
   lastname: "De Carmélide",
@@ -63,7 +63,7 @@ Maintenant, grâce au chainage optionnel qu'est l'[opérateur Elvis](https://en.
 `?.`, on peut s'éviter les `&&` à tout bout de champs. Si on prend le même
 exemple :
 
-```javascript{7}
+```javascript {7}
 const user = {
   firstname: "Léodagan",
   lastname: "De Carmélide",
@@ -94,7 +94,7 @@ const E = false || true; // true alors qu'on souhaite surement false
 
 L'exemple de la proposition est surement plus parlant, car il simule la réponse d'un service web:
 
-```javascript{14-16}
+```javascript {14-16}
 const response = {
   settings: {
     nullValue: null,
@@ -115,7 +115,7 @@ const showSplashScreen = response.settings.showSplashScreen || true; // Potentia
 
 Dans les deux cas, les trois dernières affectations ne correspondent pas forcément à ce que l'on souhaite, on veut juste s'assurer que les valeurs ne sont pas `null` ou `undefined`. Voici ce que cela donne avec l'opérateur `??` :
 
-```javascript{4-7,11-13}
+```javascript {4-6,11-13}
 const undefinedValue = response.settings.undefinedValue ?? "some other default"; // result: 'some other default'
 const nullValue = response.settings.nullValue ?? "some other default"; // result: 'some other default'
 

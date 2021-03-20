@@ -212,3 +212,13 @@ pre[data-line] {
 video {
   max-width: 100%;
 }
+
+.gatsby-highlight {
+  background-color: #011627; /* my previous background color */
+  overflow: auto;
+}
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  float: left;
+  min-width: 100%;
+}

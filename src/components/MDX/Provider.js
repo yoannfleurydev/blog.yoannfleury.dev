@@ -1,6 +1,7 @@
 import React from "react";
 import { MDXProvider } from "@mdx-js/react";
 import {
+  Box,
   Code,
   Heading,
   Link,
@@ -18,6 +19,7 @@ const Paragraph = (props) => <Text mt="1rem" {...props} />;
 const InlineCode = (props) => (
   <Code colorScheme="brand" px="0.4rem" {...props} />
 );
+const Pre = (props) => <Box overflow="auto" bg="darcula.800" {...props} />;
 
 const components = {
   h1: H1,
@@ -35,6 +37,7 @@ const components = {
   ol: OrderedList,
   inlineCode: InlineCode,
   code: CodeBlock,
+  pre: Pre,
 };
 
 export const Provider = ({ children }) => (
