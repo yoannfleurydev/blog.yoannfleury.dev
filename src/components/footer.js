@@ -44,7 +44,6 @@ const Footer = () => {
           >
             twitter <Icon boxSize={3} as={FaExternalLinkAlt} />
           </Link>{" "}
-          &bull; <GatsbyLink to="/photos">photos</GatsbyLink>
           {data.allFile.nodes.map(({ childMdx: page }) => (
             <React.Fragment key={page.fields.slug}>
               {" "}

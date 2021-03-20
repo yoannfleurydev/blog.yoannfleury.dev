@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import GatsbyImage from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { Flex, Icon, Image, Link, Text } from "@chakra-ui/react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -9,9 +9,7 @@ function Bio(props) {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 50, height: 50)
         }
       }
       site {
@@ -31,7 +29,7 @@ function Bio(props) {
     <Flex {...props}>
       <Image
         as={GatsbyImage}
-        fixed={data.avatar.childImageSharp.fixed}
+        fixed={data.avatar.childImageSharp.gatsbyImageData}
         alt={author}
         borderRadius="100%"
         minWidth={50}
