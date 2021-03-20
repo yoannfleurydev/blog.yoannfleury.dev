@@ -1,42 +1,55 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { Link as GatsbyLink, graphql } from "gatsby";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { rhythm } from "../utils/typography";
+import { Box, Heading, Link, Text, useColorModeValue } from "@chakra-ui/react";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMdx.nodes;
 
+  const hColor = useColorModeValue("brand.500", "brand.300");
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Tous les posts" />
-      <Bio />
+      <Bio mt="1rem" />
       {posts.map((post) => {
         const title = post.frontmatter.title || post.parent.relativeDirectory;
         return (
-          <div key={post.frontmatter.title}>
-            <h3
-              style={{
-                marginBottom: rhythm(1 / 4),
-              }}
+          <Box key={post.frontmatter.title}>
+            <Heading
+              as="h3"
+              color={hColor}
+              fontWeight="bolder"
+              size="lg"
+              mt="2rem"
             >
               <Link
-                style={{ boxShadow: `none` }}
+                as={GatsbyLink}
                 to={post.parent.relativeDirectory}
+                _hover={{
+                  textDecoration: "underline",
+                }}
               >
                 {title}
               </Link>
-            </h3>
-            <small>{post.frontmatter.date}</small>
+            </Heading>
+            <Text
+              as="time"
+              dateTime={post.frontmatter.datetime}
+              fontSize="small"
+            >
+              {post.frontmatter.date}
+            </Text>
             <p
               dangerouslySetInnerHTML={{
                 __html: post.excerpt,
               }}
             />
-          </div>
+          </Box>
         );
       })}
     </Layout>
@@ -60,6 +73,7 @@ export const pageQuery = graphql`
         excerpt
         frontmatter {
           date(formatString: "DD/MM/YYYY")
+          datetime: date
           title
           published
         }

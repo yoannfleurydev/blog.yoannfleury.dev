@@ -32,7 +32,7 @@ de plusieurs façons :
 - **`stash --keep-index`** permet de stash les fichiers suivis, mais pas ceux
   qui sont déjà dans l'`index`.
 
-```bash{1,7,9}
+```bash {1,7,9}
 $ git status
 
 M  index.html # fichier ajouté à l'index
@@ -49,7 +49,7 @@ M  index.html # fichier ajouté à l'index
 
 - **`stash`** seul permet de mettre de côté tous les fichiers qui sont suivis.
 
-```bash{1,7,9}
+```bash {1,7,9}
 $ git status
 
 M  index.html # fichier ajouté à l'index
@@ -66,7 +66,7 @@ $ git status
 - **`stash --include-untracked`** permet de stash tous les fichiers, même les
   non suivis par git.
 
-```bash{1,7,9}
+```bash {1,7,9}
 $ git status
 
 M  index.html # fichier ajouté à l'index
@@ -96,7 +96,7 @@ Alors, pour cette dernière commande, j'utilise `reset` dans une utilisation un 
 spéciale. Le fait de faire `git reset HEAD -- monfichier.txt` me permet de
 retirer le fichier de l'index. Un exemple sera plus parlant :
 
-```bash{1,5}
+```bash {1,5}
 git add .
 
 # Tous mes fichiers sont ajouté dans l'index

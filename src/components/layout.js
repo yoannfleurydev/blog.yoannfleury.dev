@@ -1,70 +1,35 @@
 import React from "react";
-import { Link } from "gatsby";
-
-import { rhythm, scale } from "../utils/typography";
+import { Link as GatsbyLink } from "gatsby";
+import { Box, Heading, Link, useColorModeValue } from "@chakra-ui/react";
 import Footer from "./footer";
 import { Provider } from "./MDX/Provider";
 
-export default ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`;
-  let header;
+const Layout = ({ location, title, children }) => {
+  const bg = useColorModeValue("white", "black");
 
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          ...scale(1.1),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    );
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    );
-  }
+  const rootPath = `${__PATH_PREFIX__}/`;
+  const headerProps =
+    location.pathname === rootPath
+      ? { as: "h1", size: "2xl" }
+      : { as: "h3", size: "lg" };
+
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-      }}
-    >
-      <header>{header}</header>
-      <main>
-        <Provider>{children}</Provider>
-      </main>
+    <Box bg={bg}>
+      <Box mx="auto" maxW="44rem" py="2.6rem" px="1.3rem">
+        <header>
+          <Heading {...headerProps}>
+            <Link as={GatsbyLink} to={`/`} boxShadow="none">
+              {title}
+            </Link>
+          </Heading>
+        </header>
+        <main>
+          <Provider>{children}</Provider>
+        </main>
+      </Box>
       <Footer />
-    </div>
+    </Box>
   );
 };
+
+export default Layout;

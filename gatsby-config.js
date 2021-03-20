@@ -10,6 +10,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-alias-imports`,
+    `@chakra-ui/gatsby-plugin`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -22,13 +23,6 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/media`,
-        name: `media`,
       },
     },
     {
@@ -52,12 +46,6 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              aliases: { sh: "bash" },
-            },
-          },
-          {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
@@ -67,14 +55,9 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-147409206-1",
-      },
-    },
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -138,11 +121,5 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
   ],
 };
