@@ -4,7 +4,7 @@ import { Box, Heading, Link } from "@chakra-ui/react";
 import Footer from "./footer";
 import { Provider } from "./MDX/Provider";
 
-export default ({ location, title, children }) => {
+const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   const headerProps =
     location.pathname === rootPath
@@ -29,3 +29,5 @@ export default ({ location, title, children }) => {
     </Box>
   );
 };
+
+export default Layout;

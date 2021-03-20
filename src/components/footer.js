@@ -3,7 +3,7 @@ import { Link as GatsbyLink, useStaticQuery, graphql } from "gatsby";
 import { Box, Flex, Icon, Link } from "@chakra-ui/react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-export default () => {
+const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { sourceInstanceName: { eq: "pages" } }) {
@@ -64,3 +64,5 @@ export default () => {
     </Box>
   );
 };
+
+export default Footer;
