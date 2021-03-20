@@ -1,6 +1,14 @@
 import React from "react";
 import { Link as GatsbyLink, useStaticQuery, graphql } from "gatsby";
-import { Box, Flex, Icon, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Icon,
+  Link,
+  useColorMode,
+  useColorModeValue,
+  useTheme,
+} from "@chakra-ui/react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Footer = () => {
@@ -21,9 +29,33 @@ const Footer = () => {
     }
   `);
 
+  const bg = useColorModeValue("brand.100", "brand.600");
+  const color = useColorModeValue("black", "white");
+  const { colorMode } = useColorMode();
+  const theme = useTheme();
+
+  const dotColor = theme.colors.black;
+
   return (
-    <Box bg="brand.300">
-      <Flex px="2rem" py="1rem" justify="space-between" m="auto" maxW="42rem">
+    <Box
+      bg={bg}
+      backgroundImage={`radial-gradient(${dotColor} 0.45px, transparent 0.45px), radial-gradient(${dotColor} 0.45px, ${
+        colorMode === "light"
+          ? theme.colors.brand["100"]
+          : theme.colors.brand["600"]
+      } 0.45px)`}
+      opacity="0.8"
+      backgroundPosition="0 0,9px 9px"
+      backgroundSize="18px 18px"
+    >
+      <Flex
+        px="2rem"
+        py="1rem"
+        justify="space-between"
+        m="auto"
+        maxW="42rem"
+        color={color}
+      >
         <Box>
           <Link
             href="https://github.com/yoannfleurydev"

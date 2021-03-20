@@ -33,19 +33,19 @@ const theme = extendTheme({
   colors,
   ...typography,
   styles: {
-    global: {
+    global: ({ colorMode }) => ({
       body: {
-        backgroundColor: "brand.200",
+        backgroundColor: colorMode === "light" ? "brand.200" : "brand.800",
         border: "8px solid",
-        borderColor: "brand.200",
+        borderColor: colorMode === "light" ? "brand.200" : "brand.800",
       },
       a: {
         boxShadow: "none",
       },
-      ".higligh-line": {
-        backgroundColor: "red",
-      },
-    },
+    }),
+  },
+  config: {
+    useSystemColorMode: true,
   },
 });
 

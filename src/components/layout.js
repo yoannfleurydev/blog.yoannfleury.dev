@@ -1,10 +1,12 @@
 import React from "react";
 import { Link as GatsbyLink } from "gatsby";
-import { Box, Heading, Link } from "@chakra-ui/react";
+import { Box, Heading, Link, useColorModeValue } from "@chakra-ui/react";
 import Footer from "./footer";
 import { Provider } from "./MDX/Provider";
 
 const Layout = ({ location, title, children }) => {
+  const bg = useColorModeValue("white", "black");
+
   const rootPath = `${__PATH_PREFIX__}/`;
   const headerProps =
     location.pathname === rootPath
@@ -12,8 +14,8 @@ const Layout = ({ location, title, children }) => {
       : { as: "h3", size: "lg" };
 
   return (
-    <Box bg="white">
-      <Box mx="auto" maxW="42rem" py="2.6rem" px="1.3rem">
+    <Box bg={bg}>
+      <Box mx="auto" maxW="44rem" py="2.6rem" px="1.3rem">
         <header>
           <Heading {...headerProps}>
             <Link as={GatsbyLink} to={`/`} boxShadow="none">

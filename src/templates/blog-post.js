@@ -1,7 +1,14 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Flex,
+  Heading,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 import Bio from "components/bio";
 import Layout from "components/layout";
@@ -10,6 +17,8 @@ import SEO from "components/seo";
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const { post, previous, next } = pageContext;
+
+  const hColor = useColorModeValue("brand.500", "brand.300");
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -22,7 +31,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           post.childMdx.frontmatter?.ogImage?.childImageSharp?.original?.src
         }
       />
-      <Heading as="h1" color="brand.500" mt={8} fontWeight={800} size="2xl">
+      <Heading as="h1" color={hColor} mt={8} fontWeight={800} size="2xl">
         {post.childMdx.frontmatter.title}
       </Heading>
       <Text

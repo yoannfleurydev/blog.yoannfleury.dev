@@ -4,18 +4,20 @@ import {
   Box,
   Code,
   Heading,
-  Link,
   Text,
   OrderedList,
   UnorderedList,
 } from "@chakra-ui/react";
 import { Blockquote } from "components/Blockquote";
 import { CodeBlock } from "components/CodeBlock";
+import { Link } from "components/Link";
 
 // eslint-disable-next-line jsx-a11y/heading-has-content
-const H1 = (props) => <Heading as="h1" mt="3rem" size="2xl" {...props} />;
-const H2 = (props) => <Heading as="h2" mt="2rem" {...props} />;
-const Paragraph = (props) => <Text mt="1rem" {...props} />;
+const H1 = (props) => (
+  <Heading as="h1" mt="3rem" mb="2rem" size="2xl" {...props} />
+);
+const H2 = (props) => <Heading as="h2" mt="2rem" mb="1rem" {...props} />;
+const Paragraph = (props) => <Text my="1rem" {...props} />;
 const InlineCode = (props) => (
   <Code colorScheme="brand" px="0.4rem" {...props} />
 );
@@ -26,13 +28,7 @@ const components = {
   h2: H2,
   p: Paragraph,
   blockquote: Blockquote,
-  a: (props) => (
-    <Link
-      color="brand.500"
-      _hover={{ color: "brand.600", textDecoration: "underline" }}
-      {...props}
-    />
-  ),
+  a: Link,
   ul: UnorderedList,
   ol: OrderedList,
   inlineCode: InlineCode,

@@ -4,11 +4,13 @@ import { Link as GatsbyLink, graphql } from "gatsby";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { Box, Heading, Link, Text } from "@chakra-ui/react";
+import { Box, Heading, Link, Text, useColorModeValue } from "@chakra-ui/react";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMdx.nodes;
+
+  const hColor = useColorModeValue("brand.500", "brand.300");
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -20,7 +22,7 @@ const BlogIndex = ({ data, location }) => {
           <Box key={post.frontmatter.title}>
             <Heading
               as="h3"
-              color="brand.500"
+              color={hColor}
               fontWeight="bolder"
               size="lg"
               mt="2rem"

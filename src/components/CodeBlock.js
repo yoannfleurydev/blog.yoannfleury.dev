@@ -41,7 +41,6 @@ export const CodeBlock = ({ children, className, metastring }) => {
           }}
         >
           {tokens.map((line, index) => {
-            console.log(className);
             if (index === tokens.length - 1) return null;
 
             const lineProps = getLineProps({ line, key: index });

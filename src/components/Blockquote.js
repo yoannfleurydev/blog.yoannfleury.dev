@@ -1,15 +1,20 @@
 import React from "react";
-import { Text } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
 export const Blockquote = (props) => {
+  const bg = useColorModeValue("brand.50", "brand.800");
+
   return (
-    <Text
+    <Box
       {...props}
       borderLeftColor="brand.300"
       borderLeftStyle="solid"
       borderLeftWidth={4}
-      pl="1rem"
+      borderLeftRadius="base"
+      px="1rem"
+      py="0.01rem"
       my="1rem"
+      bg={bg}
     />
   );
 };
