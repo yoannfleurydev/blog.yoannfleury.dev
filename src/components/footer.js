@@ -76,15 +76,17 @@ const Footer = () => {
           >
             twitter <Icon boxSize={3} as={FaExternalLinkAlt} />
           </Link>{" "}
-          {data.allFile.nodes.map(({ childMdx: page }) => (
-            <React.Fragment key={page.fields.slug}>
-              {" "}
-              &bull;{" "}
-              <GatsbyLink to={page.fields.slug}>
-                {page.frontmatter.title.toLowerCase()}
-              </GatsbyLink>
-            </React.Fragment>
-          ))}
+          {data.allFile.nodes
+            .filter((node) => node.childMdx)
+            .map(({ childMdx: page }) => (
+              <React.Fragment key={page.fields.slug}>
+                {" "}
+                &bull;{" "}
+                <GatsbyLink to={page.fields.slug}>
+                  {page.frontmatter.title.toLowerCase()}
+                </GatsbyLink>
+              </React.Fragment>
+            ))}
         </Box>
         <Box>
           <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
