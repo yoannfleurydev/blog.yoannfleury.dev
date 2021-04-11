@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import typography from "../../theme/typography";
+import * as foundations from "../../theme/foundations";
 
 const colors = {
   brand: {
@@ -31,6 +32,7 @@ const colors = {
 
 const theme = extendTheme({
   colors,
+  ...foundations,
   ...typography,
   styles: {
     global: ({ colorMode }) => ({

@@ -2,7 +2,7 @@
 title: Uses
 ---
 
-![Work Setup](./media/uses/work-setup.png)
+![Work Setup](./media/uses/setup.webp)
 
 This page is inspired by the [Wes Bos](https://twitter.com/wesbos)' [Uses](https://wesbos.com/uses/) page.
 
