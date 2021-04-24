@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 const NotFoundPage = ({
   data: {
@@ -15,7 +15,7 @@ const NotFoundPage = ({
 }) => {
   return (
     <Layout location={location} title={title}>
-      <SEO title="404: Not Found" />
+      <Seo title="404: Not Found" />
       <h1>Not Found</h1>
       <p>
         Cette page n'existe plus, ou alors n'existait pas du tout.{" "}

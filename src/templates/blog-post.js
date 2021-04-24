@@ -12,7 +12,7 @@ import {
 
 import Bio from "components/bio";
 import Layout from "components/layout";
-import SEO from "components/seo";
+import Seo from "components/seo";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
+      <Seo
         title={post.childMdx.frontmatter.title}
         description={
           post.childMdx.frontmatter.description || post.childMdx.excerpt

@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Heading } from "@chakra-ui/react";
 import Layout from "components/layout";
-import SEO from "components/seo";
+import Seo from "components/seo";
 
 const Pages = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -11,7 +11,7 @@ const Pages = ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={post.frontmatter.title} />
+      <Seo title={post.frontmatter.title} />
       <Heading as="h1" color="brand.500" mt={8} fontWeight={800} size="2xl">
         {post.frontmatter.title}
       </Heading>
