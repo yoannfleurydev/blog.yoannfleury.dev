@@ -7,7 +7,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 function Bio(props) {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
         childImageSharp {
           gatsbyImageData(width: 50, height: 50, layout: FIXED)
         }

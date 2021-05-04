@@ -14,7 +14,16 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="Tous les posts" />
+      <Seo
+        title="Tous les posts"
+        ogImage="/og_image.png"
+        meta={[
+          {
+            property: "og:image:alt",
+            content: "Weblog personnel",
+          },
+        ]}
+      />
       <Bio mt="1rem" />
       {posts.map((post) => {
         const title = post.frontmatter.title || post.parent.relativeDirectory;
