@@ -1762,10 +1762,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/newsreader/-/newsreader-4.2.4.tgz#b146b1f0289ca9daf06ab73f0c729293eebc8945"
   integrity sha512-HlD8VGagg8CD6POGQpDHrOxIinpdwsxoixhgZ4RvsQFIpjwyEf0EbRIZ3cf02LbAhYnsDlSh43VKoQZ7QrcLSA==
 
-"@fontsource/source-code-pro@4.2.3":
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/source-code-pro/-/source-code-pro-4.2.3.tgz#70ef1c7ff88b607dd377187837b36b4b18431091"
-  integrity sha512-w1J/vLAnihvLl8pBtsoZnTgCj3O7BSE4Vt4uPlAUdZ+XlNn37bIw8pTdR6bVFljjxDd3ejfZq+T+5/jYs8tlXg==
+"@fontsource/source-code-pro@4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/source-code-pro/-/source-code-pro-4.3.0.tgz#bd4a3d93fffb47d11ac33c1e09b54d78b31217d5"
+  integrity sha512-Yqz4N/JnoYGvkbKT6b5npujUwyP24UnDWBQ2zWbpXncUBZ6pKESLr7G72VPGGTDUMpMmLpuigVWjmbfRKObLLg==
 
 "@gatsbyjs/reach-router@^1.3.6":
   version "1.3.6"
