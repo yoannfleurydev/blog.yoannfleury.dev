@@ -1757,10 +1757,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.2.2.tgz#efe97167aac992db3fadf60ea0dd72aacd3e1fc4"
   integrity sha512-lvR1PQe+8FTTd3YRW84KGcgUR8leZ7S3aY+51MQ90MQHI0VQe3cDH6T6jjs1qTm+wPmWfdSVjN8ugvNZpGUnvA==
 
-"@fontsource/newsreader@4.2.4":
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/@fontsource/newsreader/-/newsreader-4.2.4.tgz#b146b1f0289ca9daf06ab73f0c729293eebc8945"
-  integrity sha512-HlD8VGagg8CD6POGQpDHrOxIinpdwsxoixhgZ4RvsQFIpjwyEf0EbRIZ3cf02LbAhYnsDlSh43VKoQZ7QrcLSA==
+"@fontsource/newsreader@4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/newsreader/-/newsreader-4.3.0.tgz#8a53ecc46ed423187ae9175f24f74ab8762e7579"
+  integrity sha512-zHK+6SMCvcSy8NoNXIAUxmCZxyfKjmMdw8mdACKQSl9A4SeHhjLUuQTeS+uE0/IX4yv48ijZhH5DCSVcuONHaw==
 
 "@fontsource/source-code-pro@4.3.0":
   version "4.3.0"
