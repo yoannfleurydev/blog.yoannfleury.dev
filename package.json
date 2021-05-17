@@ -8,8 +8,8 @@
     "url": "https://github.com/yoannfleurydev/blog/issues"
   },
   "dependencies": {
-    "@chakra-ui/gatsby-plugin": "2.0.0",
-    "@chakra-ui/react": "1.6.1",
+    "@chakra-ui/gatsby-plugin": "2.0.1",
+    "@chakra-ui/react": "1.6.2",
     "@emotion/react": "11.4.0",
     "@emotion/styled": "11.3.0",
     "@fontsource/inter": "4.3.0",
