@@ -17,7 +17,7 @@
     "@fontsource/source-code-pro": "4.3.0",
     "@mdx-js/mdx": "1.6.22",
     "@mdx-js/react": "1.6.22",
-    "framer-motion": "4.1.16",
+    "framer-motion": "4.1.17",
     "gatsby": "3.5.0",
     "gatsby-alias-imports": "1.0.6",
     "gatsby-cli": "3.5.0",
