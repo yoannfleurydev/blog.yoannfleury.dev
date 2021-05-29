@@ -1920,10 +1920,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/inter@4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.4.0.tgz#1915b559fcaf77c4b23d578f82f75877a960ff41"
-  integrity sha512-w4ACVJpmJeSwpcHR3APAo9lg9Im3fwwz5RqLHlZoelcdxD1sj/muDsluo2dVZYGCmMxmIQkZZK8hUH1cPQGffw==
+"@fontsource/inter@4.4.1":
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.4.1.tgz#56fc896da689ffcc0c4c132451848d3c10ee5e6a"
+  integrity sha512-0nAtSE9Hds0jAUMYi1Jwh3Ht7GNF7OiyA3LFVYHJ9u9sdvKFiIxoTYt/aXs/Qlq8NOcUfxiS4R/yaK9K2OlZ2w==
 
 "@fontsource/newsreader@4.4.0":
   version "4.4.0"
