@@ -114,7 +114,7 @@ module.exports = {
         short_name: `YoannFleuryDev`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#0b86ac`,
+        theme_color: `#df9fa6`,
         display: `minimal-ui`,
         icon: `content/assets/blog-icon.png`,
       },
