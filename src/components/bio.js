@@ -40,12 +40,18 @@ function Bio(props) {
         Blog personnel de{" "}
         <Link
           href={`https://twitter.com/${social.twitter}`}
-          target="_blank"
-          rel="noopener noreferrer"
           textDecoration="underline"
           isExternal
         >
           {author} <Icon as={FaExternalLinkAlt} boxSize={3} />
+        </Link>
+        , Front End Web Developer au{" "}
+        <Link
+          href="https://www.bearstudio.fr/"
+          textDecoration="underline"
+          isExternal
+        >
+          BearStudio <Icon as={FaExternalLinkAlt} boxSize={3} />
         </Link>
         . Vous pouvez y trouver des articles sur mes découvertes dans le monde
         du développement ou autre sujet qui m'intéresse.{` `}
