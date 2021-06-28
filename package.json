@@ -45,10 +45,10 @@
     "slugify": "1.5.3"
   },
   "devDependencies": {
-    "babel-jest": "27.0.5",
+    "babel-jest": "27.0.6",
     "babel-preset-gatsby": "1.8.0",
     "identity-obj-proxy": "3.0.0",
-    "jest": "27.0.5",
+    "jest": "27.0.6",
     "prettier": "2.3.2",
     "react-test-renderer": "17.0.2"
   },
