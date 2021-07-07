@@ -2247,15 +2247,15 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/inter@4.4.5":
-  version "4.4.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.4.5.tgz#bce26ff9dd83898bd610924cff1342cc30d0e89a"
-  integrity sha512-eRUmB54CbyC3MhAuw2VvTPEc3wy8sFi0/1mVHaC7ZXglXcrSWXY+p8Xad/Zy8AcmS9BuqCCEH2qJbOt9XdX65Q==
+"@fontsource/inter@4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.0.tgz#b99e49fa178e4086250fb3df2ed6a7366c9a0cb5"
+  integrity sha512-2efK8Ru0LkuOYrEpiHPlV02YkTdIKGbezlxVNeA8/3c+tNt7P2aQPuiYYkVy7N4GA5LWSUVcLL/91MpCIjinOw==
 
-"@fontsource/newsreader@4.4.5":
-  version "4.4.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/newsreader/-/newsreader-4.4.5.tgz#1a5ca70e26f6833a8f4e7c5d34c4e6222c348ea9"
-  integrity sha512-/zef/HlRnuVwnfzgNNvkrfxH77jl7SfZUN10kXNzcd9WGjAqR6i+1CULDt92nQ0hRXrhbPcn9i9XcjLUeCOEog==
+"@fontsource/newsreader@4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/newsreader/-/newsreader-4.5.0.tgz#5aafa7ec27310ebb8ad5d09fe152319c7ee2b046"
+  integrity sha512-q5Zr4TjhkYpousNFO1yHQcyTk5Q8KIsjYQ10B+qzuL0ltiTEKyNOaXcUkjASwJUXrxhYIbDezoP/H20k9n7tuQ==
 
 "@fontsource/source-code-pro@4.4.5":
   version "4.4.5"
