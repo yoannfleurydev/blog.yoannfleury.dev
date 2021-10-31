@@ -21,11 +21,13 @@ I sometimes open Vim for some quick changes in the terminal.
 Here is a quick listing of the extensions I installed on my VS Code (minus the
 ones specific to languages):
 
-- Bracket Pair Colorizer `coenraads.bracket-pair-colorizer`
 - Clipboard Manager `edgardmessias.clipboard-manager`
+- Color Highlight `naumovs.color-highlight`
 - EditorConfig for VS Code `editorconfig.editorconfig`
+- Error Lens `usernamehw.errorlens`
 - [Gitlab Merge Request Upvotes](https://github.com/yoannfleurydev/vscode-gitlab-merge-request-upvotes) `yoannfleurydev.gitlab-merge-request-upvotes`
 - GitLens - Git Supercharged `eamodio.gitlens`
+- Indent Rainbow `oderwat.indent-rainbow`
 - Live Share `ms-vsliveshare.vsliveshare`
 - Prettier - Code formatter `esbenp.prettier-vscode`
 - Project Manager `alefragnani.project-manager`
@@ -58,12 +60,13 @@ I use professionally.
 ## Desktop Applications
 
 - I use [Rectangle](https://rectangleapp.com/) for window management.
-- As a Spotlight alternative, I use [Raycast](https://raycast.com/)
+- As a Spotlight alternative, I use [Raycast](https://raycast.com/).
 - [Notion](https://notion.so) as my knowledge base and note taking application.
 - [I'm](https://open.spotify.com/playlist/6tIPD04a91TK6tR9fSxWu7?si=j3aavs6OTw2DOnt2a6HoTQ) [a](https://open.spotify.com/playlist/6KA6z82U8tMIX722CbdCzj?si=q8-bcg2bTmWd5VG0t5lVJw) [huge](https://open.spotify.com/playlist/1xPEJgLzuHkQriUnfXedPF?si=pfaNSFtXTMOBN9mGWzNjrg) [music](https://open.spotify.com/playlist/3QicXa9nD2AZKJrxWbzbxw?si=Xxj-MEUfQ8iEUCd_RuBgrQ) [listener](https://open.spotify.com/playlist/1APGGAfEig9dXsZr8OIsVM?si=ogAgRbaVTb27rb0HZdSAaw), and use [Spotify](https://spotify.com) for the music.
 - I use [GitHub Desktop](https://desktop.github.com/) for simpliest Git workflows
 - [Bitwarden](https://bitwarden.com/) is my go to for password management.
 - [Raindrop](https://raindrop.io) to store links.
+- [RunJS](https://runjs.app/) to write some code in isolation.
 
 # Desk Setup
 
@@ -100,7 +103,8 @@ I use professionally.
 - Standing Desk [Flexispot E5B](https://www.amazon.fr/gp/product/B077JPC7PK/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 - Headset [Sony WH-1000XM4 Argent](https://shop.hardware.fr/fiche/AR202010140608.html) for meetings and
   [Edifier R1280DB Bois](https://shop.hardware.fr/fiche/AR201804050026.html) as speakers for music.
-- [Ultimate Hacking Keyboard](https://ultimatehackingkeyboard.com/) keyboard with Cherry MX Brown switches.
+- [Ultimate Hacking Keyboard](https://ultimatehackingkeyboard.com/) keyboard with Cherry MX Brown switches and a
+  [Keychron K7](https://www.keychron.com/products/keychron-k7-ultra-slim-wireless-mechanical-keyboard) when working nomadly.
 - Logitech MX Master 2S as a mouse.
 - I do between 10 and 20 kilometers of bike per day on my [Flexispot Bike](https://www.flexispot.com/all-in-one-desk-bikes-deskcise-pro)
 - For the lighting mood, I have some Philips Hue behind the screen.
