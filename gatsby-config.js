@@ -9,6 +9,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-alias-imports`,
     `@chakra-ui/gatsby-plugin`,
     {
