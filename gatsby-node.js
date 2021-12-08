@@ -5,34 +5,34 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const pageCreation = await graphql(`
-    query {
-      allFile(filter: { sourceInstanceName: { eq: "pages" } }) {
+    {
+      allFile(
+        filter: {
+          sourceInstanceName: { eq: "pages" }
+          extension: { regex: "/mdx?/" }
+        }
+      ) {
         nodes {
+          id
           childMdx {
-            frontmatter {
-              title
-            }
             fields {
               slug
             }
-            body
           }
         }
       }
     }
   `);
 
-  pageCreation.data.allFile.nodes
-    .filter((node) => node.childMdx)
-    .forEach((node) => {
-      createPage({
-        path: node.childMdx.fields.slug,
-        component: path.resolve(`./src/templates/pages.js`),
-        context: {
-          post: node.childMdx,
-        },
-      });
+  pageCreation.data.allFile.nodes.forEach((node) => {
+    createPage({
+      path: node.childMdx.fields.slug,
+      component: path.resolve(`./src/templates/pages.js`),
+      context: {
+        id: node.id,
+      },
     });
+  });
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`);
   const blogPostResult = await graphql(
