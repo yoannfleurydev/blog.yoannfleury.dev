@@ -5,9 +5,9 @@ import { Heading } from "@chakra-ui/react";
 import Layout from "components/layout";
 import Seo from "components/seo";
 
-const Pages = ({ data, pageContext, location }) => {
+const Pages = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
-  const { post } = pageContext;
+  const post = data.file.childMdx;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -15,6 +15,7 @@ const Pages = ({ data, pageContext, location }) => {
       <Heading as="h1" color="brand.500" mt={8} fontWeight={800} size="2xl">
         {post.frontmatter.title}
       </Heading>
+
       <MDXRenderer>{post.body}</MDXRenderer>
     </Layout>
   );
@@ -23,10 +24,19 @@ const Pages = ({ data, pageContext, location }) => {
 export default Pages;
 
 export const pageQuery = graphql`
-  query {
+  query PageById($id: String!) {
     site {
       siteMetadata {
         title
+      }
+    }
+    file(id: { eq: $id }) {
+      name
+      childMdx {
+        body
+        frontmatter {
+          title
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link as GatsbyLink } from "gatsby";
-import { Box, Heading, Link, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, Heading, Link, useColorModeValue } from "@chakra-ui/react";
 import Footer from "./footer";
 import { Provider } from "./MDX/Provider";
 
@@ -23,9 +23,9 @@ const Layout = ({ location, title, children }) => {
             </Link>
           </Heading>
         </header>
-        <main>
+        <Flex as="main" direction="column">
           <Provider>{children}</Provider>
-        </main>
+        </Flex>
       </Box>
       <Footer />
     </Box>
