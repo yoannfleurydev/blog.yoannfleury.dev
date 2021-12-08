@@ -69,7 +69,6 @@
     "build": "gatsby build",
     "clean": "gatsby clean",
     "develop": "gatsby develop --host 0.0.0.0",
-    "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "yarn develop",
     "serve": "gatsby serve",
