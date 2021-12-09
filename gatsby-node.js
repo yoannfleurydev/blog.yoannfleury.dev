@@ -38,32 +38,17 @@ exports.createPages = async ({ graphql, actions }) => {
   const blogPostResult = await graphql(
     `
       {
-        allFile(
-          filter: {
-            sourceInstanceName: { eq: "blog" }
-            extension: { eq: "mdx" }
-            childMdx: { frontmatter: { published: { eq: true } } }
-          }
-          sort: { fields: childMdx___frontmatter___date, order: DESC }
+        allMdx(
+          filter: { frontmatter: { published: { eq: true } } }
+          sort: { fields: frontmatter___date, order: DESC }
         ) {
           nodes {
-            childMdx {
-              frontmatter {
-                title
-                date(formatString: "DD/MM/YYYY")
-                datetime: date
-                ogImage {
-                  childImageSharp {
-                    original {
-                      src
-                    }
-                  }
-                }
-              }
-              body
-              fields {
-                slug
-              }
+            id
+            frontmatter {
+              title
+            }
+            fields {
+              slug
             }
           }
         }
@@ -76,19 +61,20 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Create blog posts pages.
-  const posts = blogPostResult.data.allFile.nodes;
+  const posts = blogPostResult.data.allMdx.nodes;
 
   posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? undefined : posts[index + 1];
-    const next = index === 0 ? undefined : posts[index - 1];
+    const previousPostId =
+      index === posts.length - 1 ? undefined : posts[index + 1].id;
+    const nextPostId = index === 0 ? undefined : posts[index - 1].id;
 
     createPage({
-      path: post.childMdx.fields.slug,
+      path: post.fields.slug,
       component: blogPost,
       context: {
-        post,
-        previous,
-        next,
+        id: post.id,
+        previousPostId,
+        nextPostId,
       },
     });
   });
