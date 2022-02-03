@@ -2774,10 +2774,10 @@
   dependencies:
     is-promise "^4.0.0"
 
-"@netlify/plugin-gatsby@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-gatsby/-/plugin-gatsby-2.0.1.tgz#b36568f241ef47bdd7d4028cb713236b0dcbf5c6"
-  integrity sha512-gUQ4AcE4Lrh6qWrCLjU7nYduk+XaYjJpo9cNHzEiH5AMqne7RxjxgP788ZO5Wj+oRgXnkJ64e1vi93tJnN0H2w==
+"@netlify/plugin-gatsby@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-gatsby/-/plugin-gatsby-2.0.2.tgz#99500272f7ed2eeabaa4fb52b9899a63cd550316"
+  integrity sha512-DhlCGcthCylRuOPuAtquYx2Ryc066WoDcRyV4CYEA++imN5lT83EZ9f366MPP+/7CUCFbNXtdVGoVYhXrd7GiA==
   dependencies:
     "@netlify/functions" "^0.11.0"
     chalk "^4.1.2"
