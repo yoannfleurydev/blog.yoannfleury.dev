@@ -2785,10 +2785,10 @@
     ufo "^0.7.10"
     unstorage "^0.2.8"
 
-"@netlify/plugin-gatsby@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-gatsby/-/plugin-gatsby-2.1.0.tgz#4cd01d35fc4077a813ce56f6cd42a92188722a33"
-  integrity sha512-zF+mrQBKIZC/q6prMXfEKJmq4N/e5VoMEK2U+stjMT7ab2cLQYirf1C/crOP026GqoDeoJiG8PaCbnIZpJUb/g==
+"@netlify/plugin-gatsby@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-gatsby/-/plugin-gatsby-2.1.2.tgz#4466957a624e25702a9cd6c3191c7ac66dac9d2a"
+  integrity sha512-45JSNzRecESLSxZWxTm0PcZ65K2AghphoPA7NbigpiTiRgURfKVQQtt+54PG9iDC62c8ZQuih8wjmT7lirJWCQ==
   dependencies:
     "@netlify/functions" "^1.0.0"
     "@netlify/ipx" "^1.0.0"
