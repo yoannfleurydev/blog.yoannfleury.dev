@@ -7,6 +7,16 @@
   "bugs": {
     "url": "https://github.com/yoannfleurydev/blog/issues"
   },
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "dev": "yarn develop",
+    "develop": "gatsby develop --host 0.0.0.0",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "yarn develop",
+    "serve": "gatsby serve",
+    "test": "jest"
+  },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "2.0.4",
     "@chakra-ui/react": "1.8.6",
@@ -64,14 +74,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yoannfleurydev/blog.git"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "clean": "gatsby clean",
-    "develop": "gatsby develop --host 0.0.0.0",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "yarn develop",
-    "serve": "gatsby serve",
-    "test": "jest"
   }
 }
