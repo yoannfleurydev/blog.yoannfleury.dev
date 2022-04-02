@@ -16,15 +16,3 @@ jobs:
         run: |
           yarn install
           yarn build
-      - name: Wait for the Netlify Preview
-        uses: jakepartusch/wait-for-netlify-action@v1
-        id: netlify
-        with:
-          site_name: blog-yoannfleury-dev
-          max_timeout: 120
-      - name: Audit with Lighthouse
-        uses: treosh/lighthouse-ci-action@v9
-        with:
-          urls: |
-            ${{ steps.netlify.outputs.url }}
-          uploadArtifacts: true
