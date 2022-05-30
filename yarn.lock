@@ -2990,10 +2990,10 @@
     ufo "^0.7.11"
     unstorage "^0.2.8"
 
-"@netlify/plugin-gatsby@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-gatsby/-/plugin-gatsby-3.1.0.tgz#8fe6f772bb4cf075a8f2c81d38a4499e33f1f5ec"
-  integrity sha512-aVbGOZBacLM/uoOIMz4cBZggS5dcVCwpPyzqw2CMHZrQ3LwLGk4Fat6EB8HMxHFJthCaK3lVRddlZZrjVzJf2w==
+"@netlify/plugin-gatsby@3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-gatsby/-/plugin-gatsby-3.2.0.tgz#55b8a1af05e73df8aab6caa69742dfc26dbf7740"
+  integrity sha512-XAgYQufZfZjBeXSHDN+AfALbd4y3XfJCqReGwUrdeR4Sn7kywqjDYspXAAlRvIlzIZEv1JetOeojq2BDbUmFIw==
   dependencies:
     "@netlify/functions" "^1.0.0"
     "@netlify/ipx" "^1.0.1"
@@ -3007,10 +3007,11 @@
     multer "^1.4.2"
     node-fetch "^2.6.1"
     node-stream-zip "^1.15.0"
-    pathe "^0.2.0"
+    pathe "^0.3.0"
     pretty-bytes "^5.6.0"
     semver "^7.3.5"
     tempy "^1.0.0"
+    uuid "^8.3.2"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -11819,6 +11820,11 @@ pathe@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.2.0.tgz#30fd7bbe0a0d91f0e60bae621f5d19e9e225c339"
   integrity sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==
+
+pathe@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.3.0.tgz#fd95bc16208263fa6dc1c78c07b3907a528de6eb"
+  integrity sha512-3vUjp552BJzCw9vqKsO5sttHkbYqqsZtH0x1PNtItgqx8BXEXzoY1SYRKcL6BTyVh4lGJGLj0tM42elUDMvcYA==
 
 peek-readable@^4.1.0:
   version "4.1.0"
