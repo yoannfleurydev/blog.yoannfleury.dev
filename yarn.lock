@@ -2990,13 +2990,14 @@
     ufo "^0.7.11"
     unstorage "^0.2.8"
 
-"@netlify/plugin-gatsby@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-gatsby/-/plugin-gatsby-3.2.0.tgz#55b8a1af05e73df8aab6caa69742dfc26dbf7740"
-  integrity sha512-XAgYQufZfZjBeXSHDN+AfALbd4y3XfJCqReGwUrdeR4Sn7kywqjDYspXAAlRvIlzIZEv1JetOeojq2BDbUmFIw==
+"@netlify/plugin-gatsby@3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-gatsby/-/plugin-gatsby-3.2.1.tgz#27d156daeb266298cfa1db4a0215e09e5996ff8c"
+  integrity sha512-CQw2Ic2x8fbbVaYzIZZpZdBI6Jb9ne3pgGUhfjPhgE4VNt+A7w5fwWEYPIIe+rGpsLnRb2fuGC5lLoRYVjk7tA==
   dependencies:
     "@netlify/functions" "^1.0.0"
     "@netlify/ipx" "^1.0.1"
+    abortcontroller-polyfill "^1.7.3"
     chalk "^4.1.2"
     co-body "^6.1.0"
     cookie "^0.5.0"
@@ -4076,7 +4077,7 @@ abort-controller@3.0.0:
   dependencies:
     event-target-shim "^5.0.0"
 
-abortcontroller-polyfill@^1.1.9:
+abortcontroller-polyfill@^1.1.9, abortcontroller-polyfill@^1.7.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/abortcontroller-polyfill/-/abortcontroller-polyfill-1.7.3.tgz#1b5b487bd6436b5b764fd52a612509702c3144b5"
   integrity sha512-zetDJxd89y3X99Kvo4qFx8GKlt6GsvN3UcRZHwU6iFA/0KiOmhkTVhe8oRoTBiTVPZu09x3vCra47+w8Yz1+2Q==
