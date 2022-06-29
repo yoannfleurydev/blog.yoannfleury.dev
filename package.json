@@ -55,11 +55,11 @@
   },
   "devDependencies": {
     "@netlify/plugin-gatsby": "3.2.4",
-    "babel-jest": "28.1.1",
+    "babel-jest": "28.1.2",
     "babel-preset-gatsby": "2.17.0",
     "gatsby-plugin-netlify": "5.0.0",
     "identity-obj-proxy": "3.0.0",
-    "jest": "28.1.1",
+    "jest": "28.1.2",
     "prettier": "2.7.1",
     "react-test-renderer": "18.2.0"
   },
