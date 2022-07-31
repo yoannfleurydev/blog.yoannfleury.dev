@@ -20,8 +20,8 @@
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "3.0.1",
     "@chakra-ui/react": "2.2.4",
-    "@emotion/react": "11.9.3",
-    "@emotion/styled": "11.9.3",
+    "@emotion/react": "11.10.0",
+    "@emotion/styled": "11.10.0",
     "@fontsource/inter": "4.5.11",
     "@fontsource/newsreader": "4.5.6",
     "@fontsource/source-code-pro": "4.5.10",
