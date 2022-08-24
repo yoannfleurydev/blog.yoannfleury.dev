@@ -18,8 +18,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@chakra-ui/gatsby-plugin": "3.0.4",
-    "@chakra-ui/react": "2.2.8",
+    "@chakra-ui/gatsby-plugin": "3.0.5",
+    "@chakra-ui/react": "2.2.9",
     "@emotion/react": "11.10.0",
     "@emotion/styled": "11.10.0",
     "@fontsource/inter": "4.5.12",
