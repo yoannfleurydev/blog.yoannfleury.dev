@@ -71,7 +71,7 @@ module.exports = {
                   date: node.childMdx.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.childMdx.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.childMdx.fields.slug,
-                  custom_elements: [{ "content:encoded": node.childMdx.html }],
+                  custom_elements: [{ "content:encoded": node.childMdx.body }],
                 });
               });
             },
@@ -89,7 +89,7 @@ module.exports = {
                   nodes {
                     childMdx {
                       excerpt
-                      html
+                      body
                       fields {
                         slug
                       }

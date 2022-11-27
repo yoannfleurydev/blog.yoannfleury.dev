@@ -53,7 +53,7 @@
     "slugify": "1.6.5"
   },
   "devDependencies": {
-    "@netlify/plugin-gatsby": "3.4.6",
+    "@netlify/plugin-gatsby": "3.4.8",
     "babel-jest": "29.0.3",
     "babel-preset-gatsby": "2.20.0",
     "gatsby-plugin-netlify": "5.0.1",

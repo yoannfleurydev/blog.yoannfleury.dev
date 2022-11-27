@@ -2,7 +2,7 @@ import React from "react";
 import { MDXProvider } from "@mdx-js/react";
 import {
   Box,
-  Code,
+  Code as ChakraCode,
   Heading,
   Text,
   OrderedList,
@@ -48,10 +48,17 @@ const H3 = (props) => {
   );
 };
 const Paragraph = (props) => <Text my="1rem" {...props} />;
-const InlineCode = (props) => (
-  <Code colorScheme="brand" px="0.4rem" {...props} />
+
+const Code = ({ className, ...rest }) => {
+  return className ? (
+    <CodeBlock className={className} {...rest} />
+  ) : (
+    <ChakraCode colorScheme="brand" px="0.4rem" {...rest} />
+  );
+};
+const Pre = (props) => (
+  <Box overflow="auto" bg="darcula.800" rounded="md" {...props} />
 );
-const Pre = (props) => <Box overflow="auto" bg="darcula.800" {...props} />;
 
 const components = {
   h1: H1,
@@ -62,8 +69,10 @@ const components = {
   a: Link,
   ul: UnorderedList,
   ol: OrderedList,
-  inlineCode: InlineCode,
-  code: CodeBlock,
+  // inlineCode: InlineCode,
+  // Need new codeblock
+  // code: CodeBlock,
+  code: Code,
   pre: Pre,
 };
 
