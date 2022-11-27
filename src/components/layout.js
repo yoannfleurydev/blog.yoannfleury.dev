@@ -14,8 +14,15 @@ const Layout = ({ location, title, children }) => {
       : { as: "h3", size: "lg" };
 
   return (
-    <Box bg={bg}>
-      <Box mx="auto" maxW="44rem" py="2.6rem" px="1.3rem">
+    <Flex
+      minHeight="100vh"
+      direction="column"
+      bg={bg}
+      border="8px solid"
+      borderColor="brand.200"
+      _dark={{ borderColor: "brand.800" }}
+    >
+      <Box flex="1" mx="auto" maxW="44rem" py="2.6rem" px="1.3rem">
         <header>
           <Heading {...headerProps}>
             <Link as={GatsbyLink} to={`/`} boxShadow="none">
@@ -28,7 +35,7 @@ const Layout = ({ location, title, children }) => {
         </Flex>
       </Box>
       <Footer />
-    </Box>
+    </Flex>
   );
 };
 

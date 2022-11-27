@@ -38,8 +38,6 @@ const theme = extendTheme({
     global: ({ colorMode }) => ({
       body: {
         backgroundColor: colorMode === "light" ? "brand.200" : "brand.800",
-        border: "8px solid",
-        borderColor: colorMode === "light" ? "brand.200" : "brand.800",
       },
       a: {
         boxShadow: "none",
