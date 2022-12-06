@@ -22,7 +22,14 @@ const Layout = ({ location, title, children }) => {
       borderColor="brand.200"
       _dark={{ borderColor: "brand.800" }}
     >
-      <Box flex="1" mx="auto" maxW="44rem" py="2.6rem" px="1.3rem">
+      <Box
+        flex="1"
+        mx="auto"
+        maxW="44rem"
+        w={{ base: "94vw", md: "100vw" }}
+        py="2.6rem"
+        px="1.3rem"
+      >
         <header>
           <Heading {...headerProps}>
             <Link as={GatsbyLink} to={`/`} boxShadow="none">
