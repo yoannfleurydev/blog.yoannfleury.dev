@@ -5,6 +5,8 @@ published: true
 ogImage: ./og_image.png
 ---
 
+import SlackStatusUpdate from "./slack-status-update.mp4";
+
 Il y a une fonctionnalité bien pratique avec Slack, c'est la possibilité de
 mettre un statut. Bien pratique, parce qu'elle permet d'indiquer aux collègues
 si nous sommes en vacances, absent aujourd'hui, dans les transports, ou encore,
@@ -23,7 +25,7 @@ Voici le résultat que nous souhaitons obtenir :
 
 <figure>
   <video controls allowFullScreen>
-    <source src="slack-status-update.mp4" type="video/mp4" />
+    <source src={SlackStatusUpdate} type="video/mp4" />
   </video>
 </figure>
 
