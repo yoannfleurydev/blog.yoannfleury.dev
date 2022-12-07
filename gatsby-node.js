@@ -18,16 +18,21 @@ exports.createPages = async ({ graphql, actions }) => {
             fields {
               slug
             }
+            internal {
+              contentFilePath
+            }
           }
         }
       }
     }
   `);
 
+  const pageTemplate = path.resolve(`./src/templates/pages.js`);
+
   pageCreation.data.allFile.nodes.forEach((node) => {
     createPage({
       path: node.childMdx.fields.slug,
-      component: path.resolve(`./src/templates/pages.js`),
+      component: `${pageTemplate}?__contentFilePath=${node.childMdx.internal.contentFilePath}`,
       context: {
         id: node.id,
       },
@@ -50,6 +55,9 @@ exports.createPages = async ({ graphql, actions }) => {
             fields {
               slug
             }
+            internal {
+              contentFilePath
+            }
           }
         }
       }
@@ -70,7 +78,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: post.fields.slug,
-      component: blogPost,
+      component: `${blogPost}?__contentFilePath=${post.internal.contentFilePath}`,
       context: {
         id: post.id,
         previousPostId,

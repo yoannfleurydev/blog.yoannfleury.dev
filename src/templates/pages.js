@@ -1,11 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Heading } from "@chakra-ui/react";
 import Layout from "components/layout";
 import Seo from "components/seo";
 
-const Pages = ({ data, location }) => {
+const Pages = ({ data, location, children }) => {
   const siteTitle = data.site.siteMetadata.title;
   const post = data.file.childMdx;
 
@@ -16,7 +15,7 @@ const Pages = ({ data, location }) => {
         {post.frontmatter.title}
       </Heading>
 
-      <MDXRenderer>{post.body}</MDXRenderer>
+      {children}
     </Layout>
   );
 };
@@ -24,7 +23,7 @@ const Pages = ({ data, location }) => {
 export default Pages;
 
 export const pageQuery = graphql`
-  query PageById($id: String!) {
+  query ($id: String!) {
     site {
       siteMetadata {
         title

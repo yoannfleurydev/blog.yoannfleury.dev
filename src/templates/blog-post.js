@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import {
   Box,
   Divider,
@@ -14,7 +13,7 @@ import Bio from "components/bio";
 import Layout from "components/layout";
 import Seo from "components/seo";
 
-const BlogPostTemplate = ({ data, location }) => {
+const BlogPostTemplate = ({ data, location, children }) => {
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = data;
   const post = data.mdx;
@@ -39,7 +38,7 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         {post.frontmatter.date}
       </Text>
-      <MDXRenderer>{post.body}</MDXRenderer>
+      {children}
       <Divider my={8} />
       <Bio />
 
@@ -66,11 +65,7 @@ const BlogPostTemplate = ({ data, location }) => {
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostById(
-    $id: String!
-    $previousPostId: String
-    $nextPostId: String
-  ) {
+  query ($id: String!, $previousPostId: String, $nextPostId: String) {
     site {
       siteMetadata {
         title
