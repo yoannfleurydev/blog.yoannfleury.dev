@@ -27,7 +27,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  const pageTemplate = path.resolve(`./src/templates/pages.js`);
+  const pageTemplate = path.resolve(`./src/templates/pages.jsx`);
 
   pageCreation.data.allFile.nodes.forEach((node) => {
     createPage({
@@ -39,7 +39,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`);
+  const blogPost = path.resolve(`./src/templates/blog-post.jsx`);
   const blogPostResult = await graphql(
     `
       {
