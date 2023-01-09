@@ -26,7 +26,7 @@
     "@fontsource/newsreader": "4.5.9",
     "@fontsource/source-code-pro": "4.5.12",
     "@mdx-js/react": "2.2.1",
-    "framer-motion": "8.1.7",
+    "framer-motion": "8.3.0",
     "gatsby": "4.25.2",
     "gatsby-alias-imports": "1.0.6",
     "gatsby-cli": "4.25.0",
