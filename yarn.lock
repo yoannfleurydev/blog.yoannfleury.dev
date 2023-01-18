@@ -2006,20 +2006,20 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/inter@4.5.14":
+"@fontsource/inter@4.5.15":
+  version "4.5.15"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.15.tgz#eed1873d68755d3b52d6fcfcfa3493118430a512"
+  integrity sha512-FzleM9AxZQK2nqsTDtBiY0PMEVWvnKnuu2i09+p6DHvrHsuucoV2j0tmw+kAT3L4hvsLdAIDv6MdGehsPIdT+Q==
+
+"@fontsource/newsreader@4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/newsreader/-/newsreader-4.5.10.tgz#06520445ee2ff937822b216d8bf9f42288213e91"
+  integrity sha512-W53OB7037HyDwQux0lrIWzxr16so0zo0QpBYkRe/SJP/34UAQq746CXwcPZbC3AqdnksvUW1SU5bYHQLLbBSkA==
+
+"@fontsource/source-code-pro@4.5.14":
   version "4.5.14"
-  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.14.tgz#3944b809aa7bf27dacd20bdc04a49fb738959724"
-  integrity sha512-JDC9AocdPLuGsASkvWw9hS5gtHE7K9dOwL98XLrk5yjYqxy4uVnScG58NUvFMJDVJRl/7c8Wnap6PEs+7Zvj1Q==
-
-"@fontsource/newsreader@4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/newsreader/-/newsreader-4.5.9.tgz#3a48feb17efafbf13be0f2e6e857902a42f851d4"
-  integrity sha512-i8v/LAqkmZoWsjF2mi70aGWP+Rse7xu+1o80FgC9VYU++AgQGGYY4iK2f2gruwWbDXb4a80CVxuezjlzrHOLBA==
-
-"@fontsource/source-code-pro@4.5.12":
-  version "4.5.12"
-  resolved "https://registry.yarnpkg.com/@fontsource/source-code-pro/-/source-code-pro-4.5.12.tgz#4ca4dffb485f3f2768dd13157cb09a9b134a9cd1"
-  integrity sha512-6r1dykX7SH1Orm7xUh4sA8pjM1uNPKo9fV+y9/wxS+y/fwN+sMf6b1jHDUTmfEtw1OxlTaHGrr2I7dGeNqxdPA==
+  resolved "https://registry.yarnpkg.com/@fontsource/source-code-pro/-/source-code-pro-4.5.14.tgz#97e7b889f485c56132925e3b5bd1cc114b67e163"
+  integrity sha512-EWE0djE7wFCBmExWa9oT1vIp+qj5MUroVvXWb9G7Ig4t4aXDd9QDidYZzMzNemb8gQxTdOzGmhx6EZnDTFMh5Q==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@^1.10.0":
   version "1.10.0"
