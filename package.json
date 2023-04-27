@@ -27,7 +27,7 @@
     "@fontsource/source-code-pro": "4.5.14",
     "@mdx-js/react": "2.3.0",
     "framer-motion": "8.5.5",
-    "gatsby": "4.25.4",
+    "gatsby": "4.25.5",
     "gatsby-alias-imports": "1.0.6",
     "gatsby-cli": "4.25.0",
     "gatsby-image": "3.11.0",
