@@ -8,3 +8,15 @@ Content-Security-Policy = "frame-ancestors 'none'"
 X-Content-Type-Options = "nosniff"
 X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
+
+[[redirects]]
+force = true
+from = "/uses"
+status = 301
+to = "https://www.yoannfleury.dev/uses"
+
+[[redirects]]
+force = true
+from = "/*"
+status = 301
+to = "https://www.yoannfleury.dev/blog/:splat"
