@@ -1,3 +1,6 @@
+# OLD BLOG - Check https://github.com/yoannfleurydev/yoannfleury.dev out for the new sources
+
+
 <p align="center">
   <a href="https://blog.yoannfleury.dev">
     <img alt="Blog's icon" src="./content/assets/blog-icon.png" width="60" />
